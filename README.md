@@ -12,7 +12,9 @@ tests used for the accompanying manuscript.
 
 ## Workflow
 
-
+<p align="center">
+  <img src="assets/figures/figure1_treatagent_framework.png" alt="TreatAgent workflow" width="900">
+</p>
 
 TreatAgent evaluates each drug-disease pair through five local expert modules:
 

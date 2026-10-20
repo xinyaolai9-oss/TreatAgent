@@ -3,7 +3,7 @@
 TreatAgent is an evidence-guided multi-agent system for prioritizing drug
 repurposing candidates. Given a drug represented by SMILES and a disease name,
 TreatAgent gathers complementary biomedical evidence, organizes it into a
-structured evidence graph, and returns a calibrated treatment-potential score
+structured evidence record, and returns a calibrated treatment-potential score
 with an auditable explanation.
 
 The repository contains the runnable TreatAgent implementation, benchmark

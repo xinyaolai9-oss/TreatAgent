@@ -1,0 +1,2372 @@
+[
+  {
+    "input": "data\\benchmark\\splits\\drug_disjoint_train.json",
+    "rows": 1512,
+    "unique_smiles": 362,
+    "matched_rows": 1237,
+    "matched_rate": 0.8181,
+    "unique_matched_drugcentral_records": 263,
+    "match_methods": {
+      "ambiguous_connectivity_relaxed": 1,
+      "canonical_smiles": 1079,
+      "connectivity_relaxed": 55,
+      "inchikey": 90,
+      "parent_connectivity_relaxed": 12,
+      "unmatched": 275
+    },
+    "match_methods_by_label": {
+      "0": {
+        "canonical_smiles": 533,
+        "unmatched": 143,
+        "inchikey": 62,
+        "connectivity_relaxed": 26,
+        "parent_connectivity_relaxed": 3
+      },
+      "1": {
+        "parent_connectivity_relaxed": 9,
+        "canonical_smiles": 546,
+        "connectivity_relaxed": 29,
+        "unmatched": 132,
+        "inchikey": 28,
+        "ambiguous_connectivity_relaxed": 1
+      }
+    },
+    "matched_examples": [
+      {
+        "sample_id": "PAIR-000731",
+        "label": 1,
+        "disease": "psychosis",
+        "query_smiles": "CN1CC2c3ccccc3Oc3ccc(Cl)cc3C2C1.O=C(O)/C=C\\C(=O)O",
+        "matched_by": "parent_connectivity_relaxed",
+        "match_score": 0.75,
+        "matched_drug": "asenapine"
+      },
+      {
+        "sample_id": "PAIR-000147",
+        "label": 0,
+        "disease": "colorectal neoplasms",
+        "query_smiles": "CC(=O)O[C@H]1C(=O)[C@@]2(C)[C@H]([C@H](OC(=O)c3ccccc3)[C@]3(O)C[C@H](OC(=O)[C@H](O)[C@@H](NC(=O)c4ccccc4)c4ccccc4)C(C)=C1C3(C)C)[C@]1(OC(C)=O)CO[C@@H]1C[C@@H]2O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "paclitaxel"
+      },
+      {
+        "sample_id": "PAIR-001553",
+        "label": 1,
+        "disease": "benign prostatic hyperplasia",
+        "query_smiles": "Cn1c(=O)cc(N2CCC[C@@H](N)C2)n(Cc2ccccc2C#N)c1=O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "alogliptin"
+      },
+      {
+        "sample_id": "PAIR-000812",
+        "label": 0,
+        "disease": "stomach neoplasms",
+        "query_smiles": "CNC(=O)c1ccccc1Sc1ccc2c(/C=C/c3ccccn3)n[nH]c2c1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "axitinib"
+      },
+      {
+        "sample_id": "PAIR-000776",
+        "label": 0,
+        "disease": "gastric cancer",
+        "query_smiles": "CNC(=O)c1cc(Oc2ccc(NC(=O)Nc3ccc(Cl)c(C(F)(F)F)c3)cc2)ccn1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "sorafenib"
+      },
+      {
+        "sample_id": "PAIR-000186",
+        "label": 0,
+        "disease": "benign prostatic hyperplasia",
+        "query_smiles": "CC(C)(C)NC(=O)[C@H]1CC[C@H]2[C@@H]3CC[C@H]4NC(=O)C=C[C@]4(C)[C@H]3CC[C@]12C",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "finasteride"
+      },
+      {
+        "sample_id": "PAIR-000702",
+        "label": 1,
+        "disease": "atrial fibrillation",
+        "query_smiles": "CN(CCOc1ccc(NS(C)(=O)=O)cc1)CCc1ccc(NS(C)(=O)=O)cc1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "dofetilide"
+      },
+      {
+        "sample_id": "PAIR-000068",
+        "label": 0,
+        "disease": "breast cancer",
+        "query_smiles": "C=C1CC[C@H](O)C/C1=C/C=C1\\CCC[C@]2(C)[C@@H]([C@H](C)CCCC(C)C)CC[C@@H]12",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "colecalciferol"
+      },
+      {
+        "sample_id": "PAIR-000822",
+        "label": 1,
+        "disease": "schizophrenia",
+        "query_smiles": "CNCCC(Oc1ccc(C(F)(F)F)cc1)c1ccccc1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "fluoxetine"
+      },
+      {
+        "sample_id": "PAIR-002010",
+        "label": 0,
+        "disease": "psoriasis",
+        "query_smiles": "Nc1nc(=O)c2nc(CNc3ccc(C(=O)N[C@@H](CCC(=O)O)C(=O)O)cc3)cnc2[nH]1",
+        "matched_by": "inchikey",
+        "match_score": 1.0,
+        "matched_drug": "folic acid"
+      },
+      {
+        "sample_id": "PAIR-001036",
+        "label": 1,
+        "disease": "rheumatoid arthritis",
+        "query_smiles": "COc1cc2c(c(OC)c1OC)-c1ccc(OC)c(=O)cc1C(NC(C)=O)CC2",
+        "matched_by": "connectivity_relaxed",
+        "match_score": 0.8,
+        "matched_drug": "colchicine"
+      },
+      {
+        "sample_id": "PAIR-002065",
+        "label": 1,
+        "disease": "sarcoma",
+        "query_smiles": "O=C(/C=C\\n1cnc(-c2cc(C(F)(F)F)cc(C(F)(F)F)c2)n1)NNc1cnccn1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "selinexor"
+      },
+      {
+        "sample_id": "PAIR-001060",
+        "label": 0,
+        "disease": "head and neck neoplasms",
+        "query_smiles": "COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCCN1CCOCC1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "gefitinib"
+      },
+      {
+        "sample_id": "PAIR-001519",
+        "label": 0,
+        "disease": "acute ischemic stroke",
+        "query_smiles": "Cn1c(=O)cc(N2CCC[C@@H](N)C2)n(Cc2ccccc2C#N)c1=O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "alogliptin"
+      },
+      {
+        "sample_id": "PAIR-000992",
+        "label": 0,
+        "disease": "venous thrombosis",
+        "query_smiles": "CO[C@H]1O[C@H](COS(=O)(=O)O)[C@@H](O[C@@H]2O[C@@H](C(=O)O)[C@@H](O[C@H]3O[C@H](COS(=O)(=O)O)[C@@H](O[C@@H]4O[C@H](C(=O)O)[C@@H](O[C@H]5O[C@H](COS(=O)(=O)O)[C@@H](O)[C@H](O)[C@H]5NS(=O)(=O)O)[C@H](O)[C@H]4O)[C@H](OS(=O)(=O)O)[C@H]3NS(=O)(=O)O)[C@H](O)[C@H]2OS(=O)(=O)O)[C@H](O)[C@H]1NS(=O)(=O)O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "fondaparinux"
+      },
+      {
+        "sample_id": "PAIR-001897",
+        "label": 0,
+        "disease": "breast cancer",
+        "query_smiles": "NC(=O)c1cnccn1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "pyrazinamide"
+      },
+      {
+        "sample_id": "PAIR-001857",
+        "label": 0,
+        "disease": "ischemic stroke",
+        "query_smiles": "N=C(N)NCCC[C@H](N)C(=O)O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "arginine"
+      },
+      {
+        "sample_id": "PAIR-001291",
+        "label": 0,
+        "disease": "prostate cancer",
+        "query_smiles": "C[C@]12CC[C@@H]3c4ccc(O)cc4C[C@@H](CCCCCCCCCS(=O)CCCC(F)(F)C(F)(F)F)[C@H]3[C@@H]1CC[C@@H]2O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "fulvestrant"
+      },
+      {
+        "sample_id": "PAIR-002140",
+        "label": 1,
+        "disease": "major depressive disorder",
+        "query_smiles": "O=C1CCc2ccc(OCCCCN3CCN(c4cccc(Cl)c4Cl)CC3)cc2N1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "aripiprazole"
+      },
+      {
+        "sample_id": "PAIR-000388",
+        "label": 0,
+        "disease": "melanoma",
+        "query_smiles": "CCC1=C[C@@H]2CN(C1)Cc1c([nH]c3ccccc13)[C@@](C(=O)OC)(c1cc3c(cc1OC)N(C)[C@H]1[C@@](O)(C(=O)OC)[C@H](OC(C)=O)[C@]4(CC)C=CCN5CC[C@]31[C@@H]54)C2",
+        "matched_by": "inchikey",
+        "match_score": 1.0,
+        "matched_drug": "vinorelbine"
+      }
+    ],
+    "unmatched_examples": [
+      {
+        "sample_id": "PAIR-000604",
+        "label": 0,
+        "disease": "lymphoma",
+        "query_smiles": "CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2cc3c(N)cccc3nc2-1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001802",
+        "label": 0,
+        "disease": "myelodysplastic syndromes",
+        "query_smiles": "Cn1cncc1[C@@](N)(c1ccc(Cl)cc1)c1ccc2c(c1)c(-c1cccc(Cl)c1)cc(=O)n2C",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002206",
+        "label": 1,
+        "disease": "pancreatic ductal adenocarcinoma",
+        "query_smiles": "O=C1[O][Pt]2(<-[NH2][C@@H]3CCCC[C@H]3[NH2]->2)[O]C1=O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000226",
+        "label": 0,
+        "disease": "multiple myeloma",
+        "query_smiles": "CC(C)C[C@H](NC(=O)[C@@H](NC(=O)c1cccc(-c2ccccc2)n1)[C@@H](C)O)B(O)O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000001",
+        "label": 0,
+        "disease": "liver transplantation",
+        "query_smiles": "C#CCC/C(O)=C(\\C#N)C(=O)Nc1ccc(C(F)(F)F)cc1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002374",
+        "label": 1,
+        "disease": "chronic kidney disease",
+        "query_smiles": "[Cl-].[Na+]",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001929",
+        "label": 1,
+        "disease": "proliferative diabetic retinopathy",
+        "query_smiles": "NCC[C@@H](O)c1cccc(OCC2CCCCC2)c1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000873",
+        "label": 1,
+        "disease": "diabetic nephropathy",
+        "query_smiles": "COC(=O)[C@]12CCC(C)(C)C[C@H]1[C@H]1C(=O)C=C3[C@@]4(C)C=C(C#N)C(=O)C(C)(C)[C@@H]4CC[C@@]3(C)[C@]1(C)CC2",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000439",
+        "label": 0,
+        "disease": "renal cell carcinoma",
+        "query_smiles": "CCCCCCCCCCCCCCCCCCOP(=O)([O-])OC1CC[N+](C)(C)CC1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002049",
+        "label": 1,
+        "disease": "osteoarthritis of the knee",
+        "query_smiles": "O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002386",
+        "label": 1,
+        "disease": "psoriatic arthritis",
+        "query_smiles": "[Cl-].[Na+]",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000591",
+        "label": 0,
+        "disease": "non small cell lung cancer",
+        "query_smiles": "CCOc1ccc(-c2cc(C)cn2-c2ccc(S(N)(=O)=O)cc2)cc1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002414",
+        "label": 1,
+        "disease": "nasopharyngeal carcinoma",
+        "query_smiles": "[NH3]->[Pt](<-[NH3])([Cl])[Cl]",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002435",
+        "label": 0,
+        "disease": "ovarian neoplasms",
+        "query_smiles": "[NH3]->[Pt]1(<-[NH3])[O]C(=O)C2(CCC2)C(=O)[O]1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000282",
+        "label": 1,
+        "disease": "rectal cancer",
+        "query_smiles": "CC(C)c1cc(-c2nnc(O)n2-c2ccc3c(ccn3C)c2)c(O)cc1O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001011",
+        "label": 1,
+        "disease": "breast cancer",
+        "query_smiles": "COc1cc(CCc2cc(NC(=O)c3ccc(N4C[C@@H](C)N[C@@H](C)C4)cc3)n[nH]2)cc(OC)c1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002409",
+        "label": 0,
+        "disease": "liver cancer",
+        "query_smiles": "[NH3]->[Pt](<-[NH3])([Cl])[Cl]",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002207",
+        "label": 0,
+        "disease": "pancreatic neoplasms",
+        "query_smiles": "O=C1[O][Pt]2(<-[NH2][C@@H]3CCCC[C@H]3[NH2]->2)[O]C1=O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001786",
+        "label": 0,
+        "disease": "advanced cancer",
+        "query_smiles": "Cn1cc(-c2ccc3nnc(Sc4ccc5ncccc5c4)n3n2)cn1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002156",
+        "label": 1,
+        "disease": "advanced urothelial carcinoma",
+        "query_smiles": "O=C1[O][Pt]2(<-[NH2][C@@H]3CCCC[C@H]3[NH2]->2)[O]C1=O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      }
+    ]
+  },
+  {
+    "input": "data\\benchmark\\splits\\drug_disjoint_val.json",
+    "rows": 216,
+    "unique_smiles": 193,
+    "matched_rows": 140,
+    "matched_rate": 0.6481,
+    "unique_matched_drugcentral_records": 119,
+    "match_methods": {
+      "ambiguous_connectivity_relaxed": 1,
+      "canonical_smiles": 121,
+      "connectivity_relaxed": 7,
+      "inchikey": 10,
+      "parent_connectivity_relaxed": 1,
+      "unmatched": 76
+    },
+    "match_methods_by_label": {
+      "0": {
+        "unmatched": 40,
+        "canonical_smiles": 53,
+        "connectivity_relaxed": 2,
+        "inchikey": 1
+      },
+      "1": {
+        "canonical_smiles": 68,
+        "unmatched": 36,
+        "inchikey": 9,
+        "connectivity_relaxed": 5,
+        "ambiguous_connectivity_relaxed": 1,
+        "parent_connectivity_relaxed": 1
+      }
+    },
+    "matched_examples": [
+      {
+        "sample_id": "PAIR-000890",
+        "label": 1,
+        "disease": "gastroesophageal reflux disease",
+        "query_smiles": "COCCCOc1ccnc(CS(=O)c2nc3ccccc3[nH]2)c1C",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "rabeprazole"
+      },
+      {
+        "sample_id": "PAIR-000479",
+        "label": 1,
+        "disease": "hypoactive sexual desire disorder",
+        "query_smiles": "CCCC[C@H](NC(C)=O)C(=O)N[C@H]1CC(=O)NCCCC[C@@H](C(=O)O)NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](Cc2cnc[nH]2)NC1=O",
+        "matched_by": "inchikey",
+        "match_score": 1.0,
+        "matched_drug": "bremelanotide"
+      },
+      {
+        "sample_id": "PAIR-000889",
+        "label": 1,
+        "disease": "hypertension",
+        "query_smiles": "COCCCOc1cc(C[C@@H](C[C@H](N)[C@@H](O)C[C@H](C(=O)NCC(C)(C)C(N)=O)C(C)C)C(C)C)ccc1OC",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "aliskiren"
+      },
+      {
+        "sample_id": "PAIR-001916",
+        "label": 0,
+        "disease": "autism spectrum disorder",
+        "query_smiles": "NCC(CC(=O)O)c1ccc(Cl)cc1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "baclofen"
+      },
+      {
+        "sample_id": "PAIR-001117",
+        "label": 1,
+        "disease": "breast cancer",
+        "query_smiles": "COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(=O)CO)C[C@@H]3O[C@H]1C[C@H](N)[C@@H](O)[C@H](C)O1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "epirubicin"
+      },
+      {
+        "sample_id": "PAIR-002342",
+        "label": 1,
+        "disease": "asthma",
+        "query_smiles": "OC[C@@H](O)[C@@H](O)[C@H](O)[C@H](O)CO",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "mannitol"
+      },
+      {
+        "sample_id": "PAIR-000198",
+        "label": 1,
+        "disease": "hypercholesterolemia",
+        "query_smiles": "CC(C)(CCCCCC(O)CCCCCC(C)(C)C(=O)O)C(=O)O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "bempedoic acid"
+      },
+      {
+        "sample_id": "PAIR-000138",
+        "label": 0,
+        "disease": "neurotoxicity syndromes",
+        "query_smiles": "CC(=O)Nc1nnc(S(N)(=O)=O)s1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "acetazolamide"
+      },
+      {
+        "sample_id": "PAIR-002025",
+        "label": 1,
+        "disease": "gastric cancer",
+        "query_smiles": "Nc1nc2c(c(=O)[nH]1)N(C=O)C(CNc1ccc(C(=O)N[C@@H](CCC(=O)O)C(=O)O)cc1)CN2",
+        "matched_by": "inchikey",
+        "match_score": 1.0,
+        "matched_drug": "leucovorin"
+      },
+      {
+        "sample_id": "PAIR-001165",
+        "label": 0,
+        "disease": "refractory brain tumors",
+        "query_smiles": "CS(=O)(=O)OCCCCOS(C)(=O)=O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "busulfan"
+      },
+      {
+        "sample_id": "PAIR-000419",
+        "label": 1,
+        "disease": "constipation",
+        "query_smiles": "CCCCC(F)(F)[C@@]1(O)CC[C@H]2[C@@H](CC(=O)[C@@H]2CCCCCCC(=O)O)O1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "lubiprostone"
+      },
+      {
+        "sample_id": "PAIR-001925",
+        "label": 1,
+        "disease": "acromegaly",
+        "query_smiles": "NCCCC[C@@H]1NC(=O)[C@@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](c2ccccc2)NC(=O)[C@@H]2C[C@@H](OC(=O)NCCN)CN2C(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](Cc2ccc(OCc3ccccc3)cc2)NC1=O",
+        "matched_by": "connectivity_relaxed",
+        "match_score": 0.8,
+        "matched_drug": "pasireotide"
+      },
+      {
+        "sample_id": "PAIR-001931",
+        "label": 1,
+        "disease": "acute myeloid leukemia",
+        "query_smiles": "NCCc1c[nH]cn1",
+        "matched_by": "inchikey",
+        "match_score": 1.0,
+        "matched_drug": "histamine"
+      },
+      {
+        "sample_id": "PAIR-000632",
+        "label": 1,
+        "disease": "clostridium difficile infection",
+        "query_smiles": "CCc1c(Cl)c(O)c(Cl)c(O)c1C(=O)O[C@H]1[C@H](O)[C@H](OC)[C@H](OC/C2=C\\C=C\\C[C@H](O)/C(C)=C/[C@H](CC)[C@@H](O[C@@H]3OC(C)(C)[C@@H](OC(=O)C(C)C)[C@H](O)[C@@H]3O)/C(C)=C/C(C)=C/CC([C@@H](C)O)OC2=O)O[C@@H]1C",
+        "matched_by": "connectivity_relaxed",
+        "match_score": 0.8,
+        "matched_drug": "fidaxomicin"
+      },
+      {
+        "sample_id": "PAIR-000751",
+        "label": 1,
+        "disease": "pain",
+        "query_smiles": "CN1CC[C@]23c4c5ccc(O)c4O[C@H]2[C@@H](O)C=C[C@H]3[C@H]1C5",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "morphine"
+      },
+      {
+        "sample_id": "PAIR-001338",
+        "label": 0,
+        "disease": "hiv infection",
+        "query_smiles": "Cc1cc(/C=C/C#N)cc(C)c1Nc1ccnc(Nc2ccc(C#N)cc2)n1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "rilpivirine"
+      },
+      {
+        "sample_id": "PAIR-000242",
+        "label": 0,
+        "disease": "major depression",
+        "query_smiles": "CC(C)NCC(O)COc1cccc2[nH]ccc12",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "pindolol"
+      },
+      {
+        "sample_id": "PAIR-000214",
+        "label": 1,
+        "disease": "adjunctive treatment of major depressive disorder",
+        "query_smiles": "CC(C)COc1ccc(CNC(=O)N(Cc2ccc(F)cc2)C2CCN(C)CC2)cc1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "pimavanserin"
+      },
+      {
+        "sample_id": "PAIR-002130",
+        "label": 1,
+        "disease": "breast cancer",
+        "query_smiles": "O=C(c1ccc(OCCN2CCCCC2)cc1)c1c(-c2ccc(O)cc2)sc2cc(O)ccc12",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "raloxifene"
+      },
+      {
+        "sample_id": "PAIR-001044",
+        "label": 1,
+        "disease": "tardive dyskinesia",
+        "query_smiles": "COc1cc2c(cc1OC)[C@H]1C[C@@H](OC(=O)[C@@H](N)C(C)C)[C@H](CC(C)C)CN1CC2",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "valbenazine"
+      }
+    ],
+    "unmatched_examples": [
+      {
+        "sample_id": "PAIR-002143",
+        "label": 0,
+        "disease": "diabetic neuropathy",
+        "query_smiles": "O=C1C[C@@]2(C(=O)N1)C(=O)N(Cc1ccc(Br)cc1F)C(=O)c1cccn12",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000425",
+        "label": 1,
+        "disease": "acute myeloid leukemia",
+        "query_smiles": "CCCCCCCC/C=C/CCCCCCCC(=O)OC[C@H]1O[C@@H](n2ccc(=N)nc2O)[C@@H](O)[C@@H]1O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001818",
+        "label": 0,
+        "disease": "major depressive disorder",
+        "query_smiles": "FC(F)(F)c1ccc2c(c1)[C@H]1CNC[C@@H]2C1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000926",
+        "label": 1,
+        "disease": "obesity",
+        "query_smiles": "CO[C@@H]1[C@H](OC(=O)/C=C/c2ccc(OCCN(C)C)cc2)CC[C@]2(CO2)[C@H]1[C@@]1(C)O[C@@H]1CC=C(C)C",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001884",
+        "label": 0,
+        "disease": "renal cell carcinoma",
+        "query_smiles": "NC(=O)CC[C@@H](C(=O)O)N(CCNC(=S)Nc1ccc2c(c1)C(=O)OC21c2ccc(O)cc2Oc2cc(O)ccc21)C(=O)c1ccc(NCc2cnc3nc(N)[nH]c(=O)c3n2)cc1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001028",
+        "label": 1,
+        "disease": "advanced solid tumors",
+        "query_smiles": "COc1cc2c(Oc3ccc4[nH]c(C)cc4c3F)ccnc2cc1OCC1(N)CC1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001820",
+        "label": 1,
+        "disease": "schizophrenia",
+        "query_smiles": "Fc1ccc(CN2CCC(Nc3ccc(C(F)(F)F)nn3)CC2)cc1F",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001446",
+        "label": 0,
+        "disease": "small cell lung cancer",
+        "query_smiles": "Cc1ccccn1.N.[Cl-].[Cl-].[Pt+2]",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001342",
+        "label": 1,
+        "disease": "hiv infection",
+        "query_smiles": "Cc1cc(C)c(Nc2ccnc(Nc3ccc(C#N)cc3)n2)c(C)c1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002312",
+        "label": 1,
+        "disease": "adenocarcinoma",
+        "query_smiles": "O=c1c(-c2ccc(O)cc2)coc2cc(O)cc(O)c12",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001506",
+        "label": 0,
+        "disease": "hypertension",
+        "query_smiles": "Cc1sc[n+](CC(=O)c2ccccc2)c1C",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001883",
+        "label": 0,
+        "disease": "ovarian cancer",
+        "query_smiles": "NC(=O)CC[C@@H](C(=O)O)N(CCNC(=S)Nc1ccc2c(c1)C(=O)OC21c2ccc(O)cc2Oc2cc(O)ccc21)C(=O)c1ccc(NCc2cnc3nc(N)[nH]c(=O)c3n2)cc1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002322",
+        "label": 1,
+        "disease": "autism spectrum disorders",
+        "query_smiles": "O=c1sn(-c2cccc3ccccc23)c(=O)n1Cc1ccccc1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000011",
+        "label": 1,
+        "disease": "prostate cancer",
+        "query_smiles": "C#C[C@]1(O)CC[C@H]2[C@@H]3CC[C@H]4C[C@H](O)CC[C@]4(C)[C@H]3CC[C@@]21C",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000191",
+        "label": 1,
+        "disease": "atrial flutter",
+        "query_smiles": "CC(C)(C)OC(=O)NCCN1C[C@@H]2CN(CCOc3ccc(C#N)cc3F)C[C@H](C1)O2",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000802",
+        "label": 1,
+        "disease": "prostatic neoplasms",
+        "query_smiles": "CNC(=O)c1ccc2cc([C@@]3(O)CCn4cncc43)ccc2c1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000995",
+        "label": 1,
+        "disease": "irritable bowel syndrome",
+        "query_smiles": "COc1c(C(=O)NC2CCN3CCCC2C3)ccc(N)c1Cl",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001027",
+        "label": 0,
+        "disease": "recurrent breast cancer",
+        "query_smiles": "COc1cc2c(Oc3ccc(N=C(O)C4(C(=O)Nc5ccc(F)cc5)CC4)cc3F)ccnc2cc1OCCCN1CCOCC1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002148",
+        "label": 1,
+        "disease": "cancer",
+        "query_smiles": "O=C1NC(=O)[C@@H](c2cn3c4c(cccc24)CCC3)[C@@H]1c1c[nH]c2ccccc12",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001013",
+        "label": 1,
+        "disease": "advanced cancer",
+        "query_smiles": "COc1cc(F)c(F)c(Nc2ccc(I)cc2F)c1NS(=O)(=O)C1(C[C@H](O)CO)CC1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      }
+    ]
+  },
+  {
+    "input": "data\\benchmark\\splits\\drug_disjoint_test.json",
+    "rows": 432,
+    "unique_smiles": 273,
+    "matched_rows": 334,
+    "matched_rate": 0.7731,
+    "unique_matched_drugcentral_records": 198,
+    "match_methods": {
+      "canonical_smiles": 300,
+      "connectivity_relaxed": 6,
+      "inchikey": 27,
+      "parent_connectivity_relaxed": 1,
+      "unmatched": 98
+    },
+    "match_methods_by_label": {
+      "0": {
+        "unmatched": 54,
+        "canonical_smiles": 124,
+        "inchikey": 12,
+        "connectivity_relaxed": 1
+      },
+      "1": {
+        "canonical_smiles": 176,
+        "unmatched": 44,
+        "inchikey": 15,
+        "connectivity_relaxed": 5,
+        "parent_connectivity_relaxed": 1
+      }
+    },
+    "matched_examples": [
+      {
+        "sample_id": "PAIR-000056",
+        "label": 0,
+        "disease": "multiple sclerosis",
+        "query_smiles": "C=C(C)[C@@H]1CCC(C)=C[C@H]1c1c(O)cc(CCCCC)cc1O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "cannabidiol"
+      },
+      {
+        "sample_id": "PAIR-000177",
+        "label": 1,
+        "disease": "epilepsy",
+        "query_smiles": "CC(=O)[C@H]1CC[C@H]2[C@@H]3CC[C@H]4C[C@](C)(O)CC[C@]4(C)[C@H]3CC[C@]12C",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "ganaxolone"
+      },
+      {
+        "sample_id": "PAIR-000583",
+        "label": 1,
+        "disease": "peripheral arterial disease",
+        "query_smiles": "CCOC(=O)[C@H](CCc1ccccc1)N[C@@H](C)C(=O)N1[C@H](C(=O)O)C[C@@H]2CCC[C@@H]21",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "ramipril"
+      },
+      {
+        "sample_id": "PAIR-001495",
+        "label": 0,
+        "disease": "irritable colon",
+        "query_smiles": "Cc1ncc2n1-c1ccc(Cl)cc1C(c1ccccc1F)=NC2",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "midazolam"
+      },
+      {
+        "sample_id": "PAIR-001496",
+        "label": 0,
+        "disease": "psoriasis",
+        "query_smiles": "Cc1ncc2n1-c1ccc(Cl)cc1C(c1ccccc1F)=NC2",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "midazolam"
+      },
+      {
+        "sample_id": "PAIR-001255",
+        "label": 1,
+        "disease": "cutaneous lupus erythematosus",
+        "query_smiles": "C[C@H]1C[C@@H]2[C@H]([C@@H](O)C[C@@]3(C)[C@H]2CC[C@]3(O)C(=O)CO)[C@@]2(C)C=CC(=O)C=C12",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "methylprednisolone"
+      },
+      {
+        "sample_id": "PAIR-000088",
+        "label": 1,
+        "disease": "lung cancer",
+        "query_smiles": "C=CC(=O)Nc1cc(Nc2nccc(-c3cn(C)c4ccccc34)n2)c(OC)cc1N(C)CCN(C)C",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "osimertinib"
+      },
+      {
+        "sample_id": "PAIR-001006",
+        "label": 0,
+        "disease": "breast cancer",
+        "query_smiles": "COc1cc(C(=O)NS(=O)(=O)c2ccccc2C)ccc1Cc1cn(C)c2ccc(NC(=O)OC3CCCC3)cc12",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "zafirlukast"
+      },
+      {
+        "sample_id": "PAIR-000212",
+        "label": 1,
+        "disease": "obesity",
+        "query_smiles": "CC(C)CC(N(C)C)C1(c2ccc(Cl)cc2)CCC1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "sibutramine"
+      },
+      {
+        "sample_id": "PAIR-001886",
+        "label": 1,
+        "disease": "menopause",
+        "query_smiles": "NC(=O)CS(=O)C(c1ccccc1)c1ccccc1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "modafinil"
+      },
+      {
+        "sample_id": "PAIR-001239",
+        "label": 1,
+        "disease": "irritable bowel syndrome",
+        "query_smiles": "C[C@@H]1NC(=O)[C@@H]2CCCN2C(=O)[C@H](CC(N)=O)NC(=O)[C@@H]2CSSC[C@H](N)C(=O)N[C@H]3CSSC[C@H](NC1=O)C(=O)N[C@@H]([C@@H](C)O)C(=O)NCC(=O)N[C@H](C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)O)CSSC[C@H](NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](CCC(=O)O)NC3=O)C(=O)N2",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "linaclotide"
+      },
+      {
+        "sample_id": "PAIR-001081",
+        "label": 1,
+        "disease": "chronic obstructive lung disease",
+        "query_smiles": "COc1ccc(CC(C)NCC(O)c2ccc(O)c(NC=O)c2)cc1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "formoterol"
+      },
+      {
+        "sample_id": "PAIR-001262",
+        "label": 0,
+        "disease": "mucositis",
+        "query_smiles": "C[C@H]1c2cccc(O)c2C(=O)C2=C(O)[C@]3(O)C(=O)C(C(N)=O)=C(O)[C@@H](N(C)C)[C@@H]3[C@@H](O)[C@@H]21",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "doxycycline"
+      },
+      {
+        "sample_id": "PAIR-000051",
+        "label": 0,
+        "disease": "graft versus host disease",
+        "query_smiles": "C/C=C1\\NC(=O)[C@H]2CSSCC/C=C/[C@H](CC(=O)N[C@H](C(C)C)C(=O)N2)OC(=O)[C@H](C(C)C)NC1=O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "romidepsin"
+      },
+      {
+        "sample_id": "PAIR-000865",
+        "label": 1,
+        "disease": "essential hypertension",
+        "query_smiles": "COC(=O)[C@@H]1CC2=CC(=O)CC[C@]2(C)[C@@]23O[C@@H]2C[C@@]2(C)[C@@H](CC[C@@]24CCC(=O)O4)[C@H]13",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "eplerenone"
+      },
+      {
+        "sample_id": "PAIR-000114",
+        "label": 0,
+        "disease": "kidney diseases",
+        "query_smiles": "CC(=O)CC(c1ccccc1)c1c(O)c2ccccc2oc1=O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "warfarin"
+      },
+      {
+        "sample_id": "PAIR-001026",
+        "label": 1,
+        "disease": "thyroid cancer",
+        "query_smiles": "COc1cc2c(Nc3ccc(Br)cc3F)ncnc2cc1OCC1CCN(C)CC1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "vandetanib"
+      },
+      {
+        "sample_id": "PAIR-000532",
+        "label": 1,
+        "disease": "metastatic renal cell carcinoma",
+        "query_smiles": "CCN(CC)CCCC(C)Nc1ccnc2cc(Cl)ccc12",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "chloroquine"
+      },
+      {
+        "sample_id": "PAIR-000089",
+        "label": 1,
+        "disease": "non small cell lung cancer",
+        "query_smiles": "C=CC(=O)Nc1cc(Nc2nccc(-c3cn(C)c4ccccc34)n2)c(OC)cc1N(C)CCN(C)C",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "osimertinib"
+      },
+      {
+        "sample_id": "PAIR-002306",
+        "label": 1,
+        "disease": "metastatic colorectal cancer",
+        "query_smiles": "O=c1[nH]c(=O)n(C2CCCO2)cc1F",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "tegafur"
+      }
+    ],
+    "unmatched_examples": [
+      {
+        "sample_id": "PAIR-002391",
+        "label": 0,
+        "disease": "bipolar disorder",
+        "query_smiles": "[Li+]",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000557",
+        "label": 0,
+        "disease": "coronary disease",
+        "query_smiles": "CCNC(=O)Nc1ncnc2c1ncn2[C@@H]1O[C@H](COP(=O)(O)O)[C@H]2O[C@H](/C=C/c3ccccc3)O[C@H]21",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000475",
+        "label": 0,
+        "disease": "hiv infection",
+        "query_smiles": "CCCCN1C(=O)[C@@H]([C@H](O)C2CCCCC2)NC(=O)C12CCN(Cc1ccc(Oc3ccc(C(=O)O)cc3)cc1)CC2",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000093",
+        "label": 0,
+        "disease": "chronic kidney disease",
+        "query_smiles": "C=CCN.ClCC1CO1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000922",
+        "label": 1,
+        "disease": "advanced solid tumors",
+        "query_smiles": "CON(C)C(=O)N1N=C(c2cc(F)ccc2F)S[C@@]1(CCCN)c1ccccc1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000887",
+        "label": 1,
+        "disease": "amenorrhea",
+        "query_smiles": "COCC(=O)[C@@]1(OC(C)=O)CC[C@H]2[C@@H]3CCC4=CC(=O)CCC4=C3[C@@H](c3ccc(N(C)C)cc3)C[C@@]21C",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001159",
+        "label": 0,
+        "disease": "prostate cancer",
+        "query_smiles": "COc1nc(C)cnc1NS(=O)(=O)c1cccnc1-c1ccc(-c2nnco2)cc1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002102",
+        "label": 0,
+        "disease": "hiv",
+        "query_smiles": "O=C(O)[C@H]1CCCN1C(=O)CCCCC(=O)N1CCC[C@@H]1C(=O)O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001941",
+        "label": 0,
+        "disease": "breast neoplasms",
+        "query_smiles": "NS(=O)(=O)Oc1ccc2c3c(c(=O)oc2c1)CCCCC3",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000310",
+        "label": 0,
+        "disease": "metastatic melanoma",
+        "query_smiles": "CC/C=C\\C/C=C\\C/C=C\\C/C=C\\C/C=C\\C/C=C\\CCC(=O)O[C@@H](C(=O)O[C@H]1C[C@@]2(O)[C@@H](OC(=O)c3ccccc3)[C@@H]3[C@]4(OC(C)=O)CO[C@@H]4C[C@H](O)[C@@]3(C)C(=O)[C@H](OC(C)=O)C(=C1C)C2(C)C)[C@@H](NC(=O)c1ccccc1)c1ccccc1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000748",
+        "label": 0,
+        "disease": "prostate cancer",
+        "query_smiles": "CN1CC[C@H](c2c(O)cc(O)c3c(=O)cc(-c4ccccc4Cl)oc23)[C@H](O)C1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001896",
+        "label": 1,
+        "disease": "rheumatoid arthritis",
+        "query_smiles": "NC(=O)c1ccc(N(C(N)=O)c2c(F)cccc2F)nc1-c1ccc(F)cc1F",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000263",
+        "label": 0,
+        "disease": "diabetic retinopathy",
+        "query_smiles": "CC(C)[C@@H](CC[C@@H](C)[C@H]1CC[C@H]2[C@@H]3[C@H](O)C[C@H]4C[C@@H](NCCCNCCCCN)CC[C@]4(C)[C@H]3CC[C@]12C)OS(=O)(=O)O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001830",
+        "label": 1,
+        "disease": "postmenopausal osteoporosis",
+        "query_smiles": "N#Cc1c(N(CC(=O)[O-])CC(=O)[O-])sc(C(=O)[O-])c1CC(=O)[O-].[Sr+2].[Sr+2]",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001087",
+        "label": 1,
+        "disease": "glioblastoma multiforme",
+        "query_smiles": "COc1ccc(N(C)c2nc(C)nc3ccccc23)cc1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000631",
+        "label": 0,
+        "disease": "renal impairment",
+        "query_smiles": "CCc1c(C(=O)C(N)=O)c2c(OCC(=O)OC)cccc2n1Cc1ccccc1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002087",
+        "label": 0,
+        "disease": "recurrent small cell lung cancer",
+        "query_smiles": "O=C(O)CCCCC(CCSCc1ccccc1)SCc1ccccc1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000561",
+        "label": 0,
+        "disease": "non small cell lung cancer",
+        "query_smiles": "CCNC(=O)c1noc(-c2cc(C(C)(C)C)c(O)cc2O)c1-c1ccc(CN2CCOCC2)cc1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000694",
+        "label": 1,
+        "disease": "anxiety",
+        "query_smiles": "CN(C)CCc1c[nH]c2cccc(OP(=O)(O)O)c12",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000485",
+        "label": 0,
+        "disease": "prostate cancer",
+        "query_smiles": "CCCCc1nc2cc(/C=C/C(=O)NO)ccc2n1CCN(CC)CC",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      }
+    ]
+  },
+  {
+    "input": "data\\benchmark\\splits\\temporal_submit_train.json",
+    "rows": 1512,
+    "unique_smiles": 665,
+    "matched_rows": 1177,
+    "matched_rate": 0.7784,
+    "unique_matched_drugcentral_records": 461,
+    "match_methods": {
+      "canonical_smiles": 1017,
+      "connectivity_relaxed": 58,
+      "inchikey": 89,
+      "parent_connectivity_relaxed": 13,
+      "unmatched": 335
+    },
+    "match_methods_by_label": {
+      "0": {
+        "canonical_smiles": 492,
+        "unmatched": 184,
+        "inchikey": 57,
+        "connectivity_relaxed": 25,
+        "parent_connectivity_relaxed": 3
+      },
+      "1": {
+        "canonical_smiles": 525,
+        "unmatched": 151,
+        "inchikey": 32,
+        "connectivity_relaxed": 33,
+        "parent_connectivity_relaxed": 10
+      }
+    },
+    "matched_examples": [
+      {
+        "sample_id": "PAIR-000247",
+        "label": 0,
+        "disease": "head and neck cancer",
+        "query_smiles": "CC(C)NCC(O)COc1cccc2ccccc12",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "propranolol"
+      },
+      {
+        "sample_id": "PAIR-000340",
+        "label": 0,
+        "disease": "colorectal cancer",
+        "query_smiles": "CC1=C(CO)C2=C(C)C3(CC3)[C@@](C)(O)C(=O)C2=C1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "irofulven"
+      },
+      {
+        "sample_id": "PAIR-000393",
+        "label": 0,
+        "disease": "ovarian cancer",
+        "query_smiles": "CCC1=C[C@@H]2CN(C1)Cc1c([nH]c3ccccc13)[C@@](C(=O)OC)(c1cc3c(cc1OC)N(C)[C@H]1[C@@](O)(C(=O)OC)[C@H](OC(C)=O)[C@]4(CC)C=CCN5CC[C@]31[C@@H]54)C2",
+        "matched_by": "inchikey",
+        "match_score": 1.0,
+        "matched_drug": "vinorelbine"
+      },
+      {
+        "sample_id": "PAIR-000396",
+        "label": 0,
+        "disease": "sarcoma",
+        "query_smiles": "CCC1=C[C@@H]2CN(C1)Cc1c([nH]c3ccccc13)[C@@](C(=O)OC)(c1cc3c(cc1OC)N(C)[C@H]1[C@@](O)(C(=O)OC)[C@H](OC(C)=O)[C@]4(CC)C=CCN5CC[C@]31[C@@H]54)C2",
+        "matched_by": "inchikey",
+        "match_score": 1.0,
+        "matched_drug": "vinorelbine"
+      },
+      {
+        "sample_id": "PAIR-000636",
+        "label": 0,
+        "disease": "gallbladder cancer",
+        "query_smiles": "CCc1c2c(nc3ccc(OC(=O)N4CCC(N5CCCCC5)CC4)cc13)-c1cc3c(c(=O)n1C2)COC(=O)[C@]3(O)CC",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "irinotecan"
+      },
+      {
+        "sample_id": "PAIR-000964",
+        "label": 0,
+        "disease": "head and neck cancer",
+        "query_smiles": "CO[C@H]1C[C@@H]2CC[C@@H](C)[C@@](O)(O2)C(=O)C(=O)N2CCCC[C@H]2C(=O)O[C@H]([C@H](C)C[C@@H]2CC[C@@H](OCCO)[C@H](OC)C2)CC(=O)[C@H](C)/C=C(\\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)C[C@H](C)/C=C/C=C/C=C/1C",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "everolimus"
+      },
+      {
+        "sample_id": "PAIR-000968",
+        "label": 0,
+        "disease": "lung cancer",
+        "query_smiles": "CO[C@H]1C[C@@H]2CC[C@@H](C)[C@@](O)(O2)C(=O)C(=O)N2CCCC[C@H]2C(=O)O[C@H]([C@H](C)C[C@@H]2CC[C@@H](OCCO)[C@H](OC)C2)CC(=O)[C@H](C)/C=C(\\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)C[C@H](C)/C=C/C=C/C=C/1C",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "everolimus"
+      },
+      {
+        "sample_id": "PAIR-001016",
+        "label": 0,
+        "disease": "breast cancer",
+        "query_smiles": "COc1cc(NCc2ccc3nc(N)nc(N)c3c2C)cc(OC)c1OC",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "trimetrexate"
+      },
+      {
+        "sample_id": "PAIR-001122",
+        "label": 1,
+        "disease": "malignant mesothelioma",
+        "query_smiles": "COc1cccc2c1C(=O)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(=O)CO)C[C@@H]3O[C@H]1C[C@H](N)[C@H](O)[C@H](C)O1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "doxorubicin"
+      },
+      {
+        "sample_id": "PAIR-001178",
+        "label": 0,
+        "disease": "lung cancer",
+        "query_smiles": "CSCC[C@H](N)C(=O)O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "methionine"
+      },
+      {
+        "sample_id": "PAIR-001206",
+        "label": 0,
+        "disease": "lymphoma",
+        "query_smiles": "C[C@@H](O[C@H]1OCCN(Cc2n[nH]c(=O)[nH]2)[C@H]1c1ccc(F)cc1)c1cc(C(F)(F)F)cc(C(F)(F)F)c1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "aprepitant"
+      },
+      {
+        "sample_id": "PAIR-001284",
+        "label": 0,
+        "disease": "endometrial cancer",
+        "query_smiles": "C[C@]12CC[C@@H]3c4ccc(O)cc4CC[C@H]3[C@@H]1CC[C@@H]2O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "estradiol"
+      },
+      {
+        "sample_id": "PAIR-001491",
+        "label": 0,
+        "disease": "breast cancer",
+        "query_smiles": "Cc1ncc(OC[C@@]2(c3cccc(F)c3)C[C@H]2C(=O)Nc2ccc(F)cn2)c(C)n1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "lemborexant"
+      },
+      {
+        "sample_id": "PAIR-001897",
+        "label": 0,
+        "disease": "breast cancer",
+        "query_smiles": "NC(=O)c1cnccn1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "pyrazinamide"
+      },
+      {
+        "sample_id": "PAIR-001926",
+        "label": 0,
+        "disease": "bladder cancer",
+        "query_smiles": "NCCC[C@](N)(C(=O)O)C(F)F",
+        "matched_by": "connectivity_relaxed",
+        "match_score": 0.8,
+        "matched_drug": "eflornithine"
+      },
+      {
+        "sample_id": "PAIR-002269",
+        "label": 0,
+        "disease": "lymphoma",
+        "query_smiles": "O=P1(N(CCCl)CCCl)NCCCO1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "cyclophosphamide"
+      },
+      {
+        "sample_id": "PAIR-001456",
+        "label": 0,
+        "disease": "hiv infection",
+        "query_smiles": "Cc1cn([C@H]2C[C@H](N=[N+]=[N-])[C@@H](CO)O2)c(=O)[nH]c1=O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "zidovudine"
+      },
+      {
+        "sample_id": "PAIR-000161",
+        "label": 0,
+        "disease": "systemic lupus erythematosus",
+        "query_smiles": "CC(=O)O[C@]1(C(C)=O)CC[C@H]2[C@@H]3C[C@H](C)C4=CC(=O)CC[C@]4(C)[C@H]3CC[C@@]21C",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "medroxyprogesterone"
+      },
+      {
+        "sample_id": "PAIR-001179",
+        "label": 0,
+        "disease": "lymphoma",
+        "query_smiles": "CSCC[C@H](N)C(=O)O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "methionine"
+      },
+      {
+        "sample_id": "PAIR-000680",
+        "label": 1,
+        "disease": "depression",
+        "query_smiles": "CN(C)CCCN1c2ccccc2CCc2ccccc21",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "imipramine"
+      }
+    ],
+    "unmatched_examples": [
+      {
+        "sample_id": "PAIR-000334",
+        "label": 0,
+        "disease": "head and neck cancer",
+        "query_smiles": "CC1=C(/C=C/C(C)=C/C=C/C(C)=C/C(=O)Nc2ccc(O)cc2)C(C)(C)CCC1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000604",
+        "label": 0,
+        "disease": "lymphoma",
+        "query_smiles": "CC[C@@]1(O)C(=O)OCc2c1cc1n(c2=O)Cc2cc3c(N)cccc3nc2-1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000748",
+        "label": 0,
+        "disease": "prostate cancer",
+        "query_smiles": "CN1CC[C@H](c2c(O)cc(O)c3c(=O)cc(-c4ccccc4Cl)oc23)[C@H](O)C1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000760",
+        "label": 0,
+        "disease": "lung cancer",
+        "query_smiles": "CNC(=O)[C@@H](NC(=O)[C@H](CC(C)C)[C@H](O)C(=O)NO)C(C)(C)C",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002134",
+        "label": 0,
+        "disease": "esophageal cancer",
+        "query_smiles": "O=C1CC[C@H](NC(=O)Cc2ccccc2)C(=O)N1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000335",
+        "label": 0,
+        "disease": "ovarian cancer",
+        "query_smiles": "CC1=C(/C=C/C(C)=C/C=C/C(C)=C/C(=O)Nc2ccc(O)cc2)C(C)(C)CCC1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000832",
+        "label": 0,
+        "disease": "kidney cancer",
+        "query_smiles": "CN[C@@H]1C[C@H]2O[C@@](C)([C@@H]1OC)n1c3ccccc3c3c4c(c5c6ccccc6n2c5c31)C(O)=N[C@@H]4O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002090",
+        "label": 0,
+        "disease": "congestive heart failure",
+        "query_smiles": "O=C(O)CCc1cc(I)c(Oc2ccc(O)cc2)c(I)c1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000759",
+        "label": 0,
+        "disease": "breast cancer",
+        "query_smiles": "CNC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](S)CCN1C(=O)N(C)C(C)(C)C1=O)C(C)(C)C",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000927",
+        "label": 0,
+        "disease": "pancreatic neoplasms",
+        "query_smiles": "CO[C@@H]1[C@H](OC(=O)NC(=O)CCl)CC[C@]2(CO2)[C@H]1[C@@]1(C)O[C@@H]1CC=C(C)C",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000474",
+        "label": 0,
+        "disease": "kidney cancer",
+        "query_smiles": "CCCCN(CCCC)C(=O)CN1C[C@H](c2ccc3c(c2)OCO3)[C@@H](C(=O)O)[C@@H]1c1ccc(OC)cc1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000449",
+        "label": 0,
+        "disease": "cerebrovascular accident",
+        "query_smiles": "CCCCCC[C@@H](CCC)C(=O)O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002123",
+        "label": 1,
+        "disease": "narcolepsy",
+        "query_smiles": "O=C([O-])CCCO.[Na+]",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000090",
+        "label": 0,
+        "disease": "breast neoplasms",
+        "query_smiles": "C=CC(=O)Nc1cc2c(Nc3ccc(F)c(Cl)c3)ncnc2cc1OCCCN1CCOCC1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000061",
+        "label": 0,
+        "disease": "liver neoplasms",
+        "query_smiles": "C=C1/C(=C\\C=C2/CCC[C@]3(C)[C@@H]([C@H](C)/C=C/C=C/C(O)(CC)CC)CC[C@@H]23)C[C@@H](O)C[C@@H]1O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002181",
+        "label": 0,
+        "disease": "kidney cancer",
+        "query_smiles": "O=C1[O][Pt]2(<-[NH2][C@@H]3CCCC[C@H]3[NH2]->2)[O]C1=O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000438",
+        "label": 0,
+        "disease": "prostate cancer",
+        "query_smiles": "CCCCCCCCCCCCCCCCCCOP(=O)([O-])OC1CC[N+](C)(C)CC1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001084",
+        "label": 0,
+        "disease": "head and neck cancer",
+        "query_smiles": "COc1ccc(C[C@H](O)c2cc(OC)c(OC)c(OC)c2)cc1O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000436",
+        "label": 0,
+        "disease": "head and neck cancer",
+        "query_smiles": "CCCCCCCCCCCCCCCCCCOP(=O)([O-])OC1CC[N+](C)(C)CC1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001091",
+        "label": 0,
+        "disease": "breast cancer",
+        "query_smiles": "COc1ccc(S(=O)(=O)Nc2cccnc2Nc2ccc(O)cc2)cc1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      }
+    ]
+  },
+  {
+    "input": "data\\benchmark\\splits\\temporal_submit_val.json",
+    "rows": 216,
+    "unique_smiles": 140,
+    "matched_rows": 177,
+    "matched_rate": 0.8194,
+    "unique_matched_drugcentral_records": 109,
+    "match_methods": {
+      "canonical_smiles": 162,
+      "connectivity_relaxed": 3,
+      "inchikey": 12,
+      "unmatched": 39
+    },
+    "match_methods_by_label": {
+      "0": {
+        "canonical_smiles": 73,
+        "inchikey": 7,
+        "unmatched": 17,
+        "connectivity_relaxed": 1
+      },
+      "1": {
+        "inchikey": 5,
+        "canonical_smiles": 89,
+        "unmatched": 22,
+        "connectivity_relaxed": 2
+      }
+    },
+    "matched_examples": [
+      {
+        "sample_id": "PAIR-001575",
+        "label": 0,
+        "disease": "congenital heart disease",
+        "query_smiles": "Cn1c(=O)cc(N2CCC[C@@H](N)C2)n(Cc2ccccc2C#N)c1=O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "alogliptin"
+      },
+      {
+        "sample_id": "PAIR-000510",
+        "label": 0,
+        "disease": "metastatic melanoma",
+        "query_smiles": "CCCS(=O)(=O)Nc1ccc(F)c(C(=O)c2c[nH]c3ncc(-c4ccc(Cl)cc4)cc23)c1F",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "vemurafenib"
+      },
+      {
+        "sample_id": "PAIR-001053",
+        "label": 1,
+        "disease": "thyroid cancer",
+        "query_smiles": "COc1cc2nccc(Oc3ccc(NC(O)=NC4CC4)c(Cl)c3)c2cc1C(=N)O",
+        "matched_by": "inchikey",
+        "match_score": 1.0,
+        "matched_drug": "lenvatinib"
+      },
+      {
+        "sample_id": "PAIR-000370",
+        "label": 0,
+        "disease": "adenocarcinoma pancreas",
+        "query_smiles": "CCC1=C[C@@H]2CN(C1)Cc1c([nH]c3ccccc13)[C@@](C(=O)OC)(c1cc3c(cc1OC)N(C)[C@H]1[C@@](O)(C(=O)OC)[C@H](OC(C)=O)[C@]4(CC)C=CCN5CC[C@]31[C@@H]54)C2",
+        "matched_by": "inchikey",
+        "match_score": 1.0,
+        "matched_drug": "vinorelbine"
+      },
+      {
+        "sample_id": "PAIR-001522",
+        "label": 0,
+        "disease": "acute myeloid leukemia",
+        "query_smiles": "Cn1c(=O)cc(N2CCC[C@@H](N)C2)n(Cc2ccccc2C#N)c1=O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "alogliptin"
+      },
+      {
+        "sample_id": "PAIR-000392",
+        "label": 0,
+        "disease": "oropharyngeal neoplasms",
+        "query_smiles": "CCC1=C[C@@H]2CN(C1)Cc1c([nH]c3ccccc13)[C@@](C(=O)OC)(c1cc3c(cc1OC)N(C)[C@H]1[C@@](O)(C(=O)OC)[C@H](OC(C)=O)[C@]4(CC)C=CCN5CC[C@]31[C@@H]54)C2",
+        "matched_by": "inchikey",
+        "match_score": 1.0,
+        "matched_drug": "vinorelbine"
+      },
+      {
+        "sample_id": "PAIR-000771",
+        "label": 0,
+        "disease": "chronic hepatitis c virus",
+        "query_smiles": "CNC(=O)c1cc(Oc2ccc(NC(=O)Nc3ccc(Cl)c(C(F)(F)F)c3)cc2)ccn1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "sorafenib"
+      },
+      {
+        "sample_id": "PAIR-000551",
+        "label": 0,
+        "disease": "cystic fibrosis",
+        "query_smiles": "CCN1CCN(C(=O)N[C@@H](C(=O)N[C@@H]2C(=O)N3[C@@H]2SC(C)(C)[C@@H]3C(=O)O)c2ccccc2)C(=O)C1=O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "piperacillin"
+      },
+      {
+        "sample_id": "PAIR-000936",
+        "label": 1,
+        "disease": "breast cancer",
+        "query_smiles": "CO[C@H]1C(=O)[C@]2(C)[C@@H](OC)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c2ccccc2)[C@]2(O)C[C@H](OC(=O)[C@H](O)[C@@H](NC(=O)OC(C)(C)C)c3ccccc3)C(C)=C1C2(C)C",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "cabazitaxel"
+      },
+      {
+        "sample_id": "PAIR-000162",
+        "label": 0,
+        "disease": "acute coronary syndrome",
+        "query_smiles": "CC(=O)Oc1cc2c(s1)CCN(C(C(=O)C1CC1)c1ccccc1F)C2",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "prasugrel"
+      },
+      {
+        "sample_id": "PAIR-001323",
+        "label": 0,
+        "disease": "resectable pancreatic cancer",
+        "query_smiles": "Cc1c(C(=O)Nc2ccc(N3C[C@@H](C)O[C@@H](C)C3)nc2)cccc1-c1ccc(OC(F)(F)F)cc1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "sonidegib"
+      },
+      {
+        "sample_id": "PAIR-000008",
+        "label": 1,
+        "disease": "heavy menstrual bleeding",
+        "query_smiles": "C#C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@@H]4[C@H]3CC[C@@]21CC",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "levonorgestrel"
+      },
+      {
+        "sample_id": "PAIR-001558",
+        "label": 0,
+        "disease": "cachexia",
+        "query_smiles": "Cn1c(=O)cc(N2CCC[C@@H](N)C2)n(Cc2ccccc2C#N)c1=O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "alogliptin"
+      },
+      {
+        "sample_id": "PAIR-002259",
+        "label": 0,
+        "disease": "gastric cancer",
+        "query_smiles": "O=P1(N(CCCl)CCCl)NCCCO1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "cyclophosphamide"
+      },
+      {
+        "sample_id": "PAIR-002010",
+        "label": 0,
+        "disease": "psoriasis",
+        "query_smiles": "Nc1nc(=O)c2nc(CNc3ccc(C(=O)N[C@@H](CCC(=O)O)C(=O)O)cc3)cnc2[nH]1",
+        "matched_by": "inchikey",
+        "match_score": 1.0,
+        "matched_drug": "folic acid"
+      },
+      {
+        "sample_id": "PAIR-001299",
+        "label": 1,
+        "disease": "chronic obstructive pulmonary disease",
+        "query_smiles": "C[N+]1(C)CCC(OC(=O)C(O)(c2ccccc2)C2CCCC2)C1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "glycopyrronium bromide"
+      },
+      {
+        "sample_id": "PAIR-001745",
+        "label": 1,
+        "disease": "rett syndrome",
+        "query_smiles": "Cn1c(=O)cc(N2CCC[C@@H](N)C2)n(Cc2ccccc2C#N)c1=O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "alogliptin"
+      },
+      {
+        "sample_id": "PAIR-001713",
+        "label": 1,
+        "disease": "paroxysmal atrial fibrillation",
+        "query_smiles": "Cn1c(=O)cc(N2CCC[C@@H](N)C2)n(Cc2ccccc2C#N)c1=O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "alogliptin"
+      },
+      {
+        "sample_id": "PAIR-000388",
+        "label": 0,
+        "disease": "melanoma",
+        "query_smiles": "CCC1=C[C@@H]2CN(C1)Cc1c([nH]c3ccccc13)[C@@](C(=O)OC)(c1cc3c(cc1OC)N(C)[C@H]1[C@@](O)(C(=O)OC)[C@H](OC(C)=O)[C@]4(CC)C=CCN5CC[C@]31[C@@H]54)C2",
+        "matched_by": "inchikey",
+        "match_score": 1.0,
+        "matched_drug": "vinorelbine"
+      },
+      {
+        "sample_id": "PAIR-000959",
+        "label": 1,
+        "disease": "gastric cancer",
+        "query_smiles": "CO[C@H]1C[C@@H]2CC[C@@H](C)[C@@](O)(O2)C(=O)C(=O)N2CCCC[C@H]2C(=O)O[C@H]([C@H](C)C[C@@H]2CC[C@@H](OCCO)[C@H](OC)C2)CC(=O)[C@H](C)/C=C(\\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)C[C@H](C)/C=C/C=C/C=C/1C",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "everolimus"
+      }
+    ],
+    "unmatched_examples": [
+      {
+        "sample_id": "PAIR-002439",
+        "label": 0,
+        "disease": "nasopharyngeal carcinoma",
+        "query_smiles": "[NH3]->[Pt]1(<-[NH3])[O]CC(=O)[O]1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002173",
+        "label": 1,
+        "disease": "gastrointestinal neoplasms",
+        "query_smiles": "O=C1[O][Pt]2(<-[NH2][C@@H]3CCCC[C@H]3[NH2]->2)[O]C1=O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001873",
+        "label": 0,
+        "disease": "high risk prostate cancer",
+        "query_smiles": "N=c1cc(C(F)(F)F)c(-c2cc(N3CCOCC3)nc(N3CCOCC3)n2)c[nH]1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002361",
+        "label": 1,
+        "disease": "atrial fibrillation",
+        "query_smiles": "S1SSSSSSS1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002425",
+        "label": 1,
+        "disease": "venous thromboembolism",
+        "query_smiles": "[NH3]->[Pt](<-[NH3])([Cl])[Cl]",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000079",
+        "label": 1,
+        "disease": "increased drug resistance",
+        "query_smiles": "C=CC(=O)N1CCC(Oc2cc3c(Nc4ccc(Cl)c(Cl)c4F)ncnc3cc2OC)CC1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002125",
+        "label": 0,
+        "disease": "hepatocellular carcinoma",
+        "query_smiles": "O=C([O-])CN1CCN(CC(=O)[O-])CCN(CC(=O)O)CCN(CC(=O)[O-])CC1.[Gd+3]",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000561",
+        "label": 0,
+        "disease": "non small cell lung cancer",
+        "query_smiles": "CCNC(=O)c1noc(-c2cc(C(C)(C)C)c(O)cc2O)c1-c1ccc(CN2CCOCC2)cc1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000740",
+        "label": 1,
+        "disease": "clear cell renal cell carcinoma",
+        "query_smiles": "CN1CCN(c2ccc3nc(-c4c(N)c5c(F)cccc5[nH]c4=O)[nH]c3c2)CC1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000040",
+        "label": 1,
+        "disease": "advanced adult hepatocellular carcinoma",
+        "query_smiles": "C/C=C(/C)C(=O)O[C@H]1C(C)=C2[C@H]([C@@H]1OC(=O)CCCCCCC)[C@@](C)(OC(C)=O)C[C@H](OC(=O)CCCCCCCCCCCNC(=O)C[C@H](N)C(=O)N[C@@H](CCC(=O)N[C@@H](CCC(=O)N[C@@H](CCC(=O)N[C@@H](CCC(=O)O)C(=O)O)C(=O)O)C(=O)O)C(=O)O)[C@@]1(O)[C@H]2OC(=O)[C@@]1(C)O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002431",
+        "label": 0,
+        "disease": "glioblastoma multiforme",
+        "query_smiles": "[NH3]->[Pt]1(<-[NH3])[O]C(=O)C2(CCC2)C(=O)[O]1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000250",
+        "label": 1,
+        "disease": "advanced solid tumors",
+        "query_smiles": "CC(C)Nc1cc(-c2c[nH]c(C(=O)N[C@H](CO)c3cccc(Cl)c3)c2)c(Cl)cn1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001011",
+        "label": 1,
+        "disease": "breast cancer",
+        "query_smiles": "COc1cc(CCc2cc(NC(=O)c3ccc(N4C[C@@H](C)N[C@@H](C)C4)cc3)n[nH]2)cc(OC)c1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000200",
+        "label": 0,
+        "disease": "osteoporosis",
+        "query_smiles": "CC(C)(F)C[C@H](N[C@@H](c1ccc(-c2ccc(S(C)(=O)=O)cc2)cc1)C(F)(F)F)C(=O)NC1(C#N)CC1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001820",
+        "label": 1,
+        "disease": "schizophrenia",
+        "query_smiles": "Fc1ccc(CN2CCC(Nc3ccc(C(F)(F)F)nn3)CC2)cc1F",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002170",
+        "label": 1,
+        "disease": "esophageal squamous cell carcinoma",
+        "query_smiles": "O=C1[O][Pt]2(<-[NH2][C@@H]3CCCC[C@H]3[NH2]->2)[O]C1=O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000237",
+        "label": 0,
+        "disease": "breast cancer",
+        "query_smiles": "CC(C)Cc1ccc([C@@H](C)C(O)=NS(C)(=O)=O)cc1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002374",
+        "label": 1,
+        "disease": "chronic kidney disease",
+        "query_smiles": "[Cl-].[Na+]",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002102",
+        "label": 0,
+        "disease": "hiv",
+        "query_smiles": "O=C(O)[C@H]1CCCN1C(=O)CCCCC(=O)N1CCC[C@@H]1C(=O)O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002370",
+        "label": 1,
+        "disease": "amyotrophic lateral sclerosis",
+        "query_smiles": "[Cl-].[Na+]",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      }
+    ]
+  },
+  {
+    "input": "data\\benchmark\\splits\\temporal_submit_test.json",
+    "rows": 432,
+    "unique_smiles": 242,
+    "matched_rows": 357,
+    "matched_rate": 0.8264,
+    "unique_matched_drugcentral_records": 194,
+    "match_methods": {
+      "ambiguous_connectivity_relaxed": 2,
+      "canonical_smiles": 321,
+      "connectivity_relaxed": 7,
+      "inchikey": 26,
+      "parent_connectivity_relaxed": 1,
+      "unmatched": 75
+    },
+    "match_methods_by_label": {
+      "0": {
+        "canonical_smiles": 145,
+        "unmatched": 36,
+        "inchikey": 11,
+        "connectivity_relaxed": 3
+      },
+      "1": {
+        "canonical_smiles": 176,
+        "connectivity_relaxed": 4,
+        "unmatched": 39,
+        "inchikey": 15,
+        "ambiguous_connectivity_relaxed": 2,
+        "parent_connectivity_relaxed": 1
+      }
+    },
+    "matched_examples": [
+      {
+        "sample_id": "PAIR-001147",
+        "label": 0,
+        "disease": "metastatic colorectal cancer",
+        "query_smiles": "COc1ccccc1Oc1c(NS(=O)(=O)c2ccc(C(C)(C)C)cc2)nc(-c2ncccn2)nc1OCCO",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "bosentan"
+      },
+      {
+        "sample_id": "PAIR-000501",
+        "label": 0,
+        "disease": "pulmonary arterial hypertension",
+        "query_smiles": "CCCNS(=O)(=O)Nc1ncnc(OCCOc2ncc(Br)cn2)c1-c1ccc(Br)cc1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "macitentan"
+      },
+      {
+        "sample_id": "PAIR-000923",
+        "label": 1,
+        "disease": "prostate cancer",
+        "query_smiles": "CONC(=O)Nc1ccc(-c2sc3c(c2CN(C)C)c(=O)n(-c2ccc(OC)nn2)c(=O)n3Cc2c(F)cccc2F)cc1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "relugolix"
+      },
+      {
+        "sample_id": "PAIR-001827",
+        "label": 0,
+        "disease": "primary myelofibrosis",
+        "query_smiles": "N#CC[C@H](C1CCCC1)n1cc(-c2ncnc3[nH]ccc23)cn1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "ruxolitinib"
+      },
+      {
+        "sample_id": "PAIR-000993",
+        "label": 1,
+        "disease": "major depressive disorder",
+        "query_smiles": "CO[C@]12CC[C@@]3(C[C@@H]1[C@](C)(O)C(C)(C)C)[C@H]1Cc4ccc(O)c5c4[C@@]3(CCN1CC1CC1)[C@H]2O5",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "buprenorphine"
+      },
+      {
+        "sample_id": "PAIR-000403",
+        "label": 0,
+        "disease": "autism",
+        "query_smiles": "CCCC(CCC)C(=O)O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "valproic acid"
+      },
+      {
+        "sample_id": "PAIR-000529",
+        "label": 0,
+        "disease": "melanoma",
+        "query_smiles": "CCN(CC)C(=S)SSC(=S)N(CC)CC",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "disulfiram"
+      },
+      {
+        "sample_id": "PAIR-001319",
+        "label": 0,
+        "disease": "graft versus host disease",
+        "query_smiles": "Cc1c(C(=O)Nc2ccc(N3C[C@@H](C)O[C@@H](C)C3)nc2)cccc1-c1ccc(OC(F)(F)F)cc1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "sonidegib"
+      },
+      {
+        "sample_id": "PAIR-000089",
+        "label": 1,
+        "disease": "non small cell lung cancer",
+        "query_smiles": "C=CC(=O)Nc1cc(Nc2nccc(-c3cn(C)c4ccccc34)n2)c(OC)cc1N(C)CCN(C)C",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "osimertinib"
+      },
+      {
+        "sample_id": "PAIR-000427",
+        "label": 1,
+        "disease": "clostridium difficile infection",
+        "query_smiles": "CCCCCCCCCC(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CC(=O)O)C(=O)N[C@@H]1C(=O)NCC(=O)N[C@@H](CCCN)C(=O)N[C@@H](CC(=O)O)C(=O)N[C@H](C)C(=O)N[C@@H](CC(=O)O)C(=O)NCC(=O)N[C@H](CO)C(=O)N[C@@H]([C@H](C)CC(=O)O)C(=O)N[C@@H](CC(=O)c2ccccc2N)C(=O)O[C@@H]1C",
+        "matched_by": "connectivity_relaxed",
+        "match_score": 0.8,
+        "matched_drug": "daptomycin"
+      },
+      {
+        "sample_id": "PAIR-001387",
+        "label": 1,
+        "disease": "respiratory syncytial virus infections",
+        "query_smiles": "Cc1cc(O)cc(C)c1Cl",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "chloroxylenol"
+      },
+      {
+        "sample_id": "PAIR-001952",
+        "label": 1,
+        "disease": "hiv",
+        "query_smiles": "N[C@@H](CO)C(=O)O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "serine"
+      },
+      {
+        "sample_id": "PAIR-000203",
+        "label": 0,
+        "disease": "asthma",
+        "query_smiles": "CC(C)(O)c1ccccc1CC[C@@H](SCC1(CC(=O)O)CC1)c1cccc(/C=C/c2ccc3ccc(Cl)cc3n2)c1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "montelukast"
+      },
+      {
+        "sample_id": "PAIR-001683",
+        "label": 0,
+        "disease": "moderate to very severe chronic obstructive pulmonary disease",
+        "query_smiles": "Cn1c(=O)cc(N2CCC[C@@H](N)C2)n(Cc2ccccc2C#N)c1=O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "alogliptin"
+      },
+      {
+        "sample_id": "PAIR-001373",
+        "label": 0,
+        "disease": "lumbar spinal stenosis",
+        "query_smiles": "Cc1cc(O)cc(C)c1Cl",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "chloroxylenol"
+      },
+      {
+        "sample_id": "PAIR-000147",
+        "label": 0,
+        "disease": "colorectal neoplasms",
+        "query_smiles": "CC(=O)O[C@H]1C(=O)[C@@]2(C)[C@H]([C@H](OC(=O)c3ccccc3)[C@]3(O)C[C@H](OC(=O)[C@H](O)[C@@H](NC(=O)c4ccccc4)c4ccccc4)C(C)=C1C3(C)C)[C@]1(OC(C)=O)CO[C@@H]1C[C@@H]2O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "paclitaxel"
+      },
+      {
+        "sample_id": "PAIR-000554",
+        "label": 1,
+        "disease": "metastatic breast cancer",
+        "query_smiles": "CCN1CCN(Cc2ccc(Nc3ncc(F)c(-c4cc(F)c5nc(C)n(C(C)C)c5c4)n3)nc2)CC1",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "abemaciclib"
+      },
+      {
+        "sample_id": "PAIR-000858",
+        "label": 1,
+        "disease": "chronic hepatitis c",
+        "query_smiles": "COC(=O)N[C@H](C(=O)N1CCC[C@H]1c1nc(-c2ccc3c(c2)O[C@@H](c2ccccc2)n2c-3cc3cc(-c4c[nH]c([C@@H]5CCCN5C(=O)[C@@H](NC(=O)OC)C(C)C)n4)ccc32)c[nH]1)C(C)C",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "elbasvir"
+      },
+      {
+        "sample_id": "PAIR-000971",
+        "label": 1,
+        "disease": "metastatic pancreatic cancer",
+        "query_smiles": "CO[C@H]1C[C@@H]2CC[C@@H](C)[C@@](O)(O2)C(=O)C(=O)N2CCCC[C@H]2C(=O)O[C@H]([C@H](C)C[C@@H]2CC[C@@H](OCCO)[C@H](OC)C2)CC(=O)[C@H](C)/C=C(\\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)C[C@H](C)/C=C/C=C/C=C/1C",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "everolimus"
+      },
+      {
+        "sample_id": "PAIR-000287",
+        "label": 0,
+        "disease": "coronary arteriosclerosis",
+        "query_smiles": "CC(C)c1nc(N(C)S(C)(=O)=O)nc(-c2ccc(F)cc2)c1/C=C/[C@@H](O)C[C@@H](O)CC(=O)O",
+        "matched_by": "canonical_smiles",
+        "match_score": 1.0,
+        "matched_drug": "rosuvastatin"
+      }
+    ],
+    "unmatched_examples": [
+      {
+        "sample_id": "PAIR-002197",
+        "label": 0,
+        "disease": "multiple myeloma",
+        "query_smiles": "O=C1[O][Pt]2(<-[NH2][C@@H]3CCCC[C@H]3[NH2]->2)[O]C1=O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002407",
+        "label": 0,
+        "disease": "hilar cholangiocarcinoma",
+        "query_smiles": "[NH3]->[Pt](<-[NH3])([Cl])[Cl]",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002168",
+        "label": 1,
+        "disease": "esophageal carcinoma",
+        "query_smiles": "O=C1[O][Pt]2(<-[NH2][C@@H]3CCCC[C@H]3[NH2]->2)[O]C1=O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001085",
+        "label": 0,
+        "disease": "neuroendocrine tumors",
+        "query_smiles": "COc1ccc(C[C@H](O)c2cc(OC)c(OC)c(OC)c2)cc1O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002060",
+        "label": 1,
+        "disease": "advanced cancer",
+        "query_smiles": "O=C(/C=C/c1ccc(O)c(O)c1)O[C@@H]1C[C@](O)(C(=O)O)C[C@@H](O)[C@H]1O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001269",
+        "label": 1,
+        "disease": "metastatic triple negative breast cancer",
+        "query_smiles": "C[C@]1(c2nc3cccc(C(N)=O)c3[nH]2)CCCN1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000263",
+        "label": 0,
+        "disease": "diabetic retinopathy",
+        "query_smiles": "CC(C)[C@@H](CC[C@@H](C)[C@H]1CC[C@H]2[C@@H]3[C@H](O)C[C@H]4C[C@@H](NCCCNCCCCN)CC[C@]4(C)[C@H]3CC[C@]12C)OS(=O)(=O)O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002082",
+        "label": 0,
+        "disease": "cystic fibrosis",
+        "query_smiles": "O=C(O)C1OC(OC2C(C(=O)O)OC(OP)C(O)C2O)C(O)C(O)C1P",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002058",
+        "label": 1,
+        "disease": "hyperkalemia",
+        "query_smiles": "O.O.O[Si](O)(O)O.O[Si](O)(O)O.O[Si](O)(O)O.[Na+].[Na+].[O-][Zr]([O-])([OH])([OH])([OH])[OH]",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001842",
+        "label": 0,
+        "disease": "schizophrenia",
+        "query_smiles": "N#[C][Fe-2]([C]#N)([C]#N)([C]#N)([C]#N)[N]=O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002383",
+        "label": 0,
+        "disease": "knee osteoarthritis",
+        "query_smiles": "[Cl-].[Na+]",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001267",
+        "label": 1,
+        "disease": "advanced solid tumors",
+        "query_smiles": "C[C@]1(c2nc3cccc(C(N)=O)c3[nH]2)CCCN1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000205",
+        "label": 1,
+        "disease": "gout",
+        "query_smiles": "CC(C)(Sc1ccncc1-c1ccc(C#N)c2ccccc12)C(=O)O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000002",
+        "label": 0,
+        "disease": "alzheimer's disease",
+        "query_smiles": "C#CCO[C@H]1CN2CCC1CC2",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-001115",
+        "label": 1,
+        "disease": "soft tissue sarcoma",
+        "query_smiles": "COc1cccc2c1C(=N)c1c(O)c3c(c(O)c1C2=O)C[C@@](O)(C(=O)CO)C[C@@H]3O[C@H]1C[C@H](N)[C@H](O)[C@H](C)O1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002226",
+        "label": 1,
+        "disease": "heart failure",
+        "query_smiles": "O=NO",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002437",
+        "label": 1,
+        "disease": "recurrent ovarian cancer",
+        "query_smiles": "[NH3]->[Pt]1(<-[NH3])[O]C(=O)C2(CCC2)C(=O)[O]1",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-002039",
+        "label": 0,
+        "disease": "allergic rhinitis",
+        "query_smiles": "O",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000176",
+        "label": 1,
+        "disease": "postpartum depression",
+        "query_smiles": "CC(=O)[C@H]1CC[C@H]2[C@@H]3CC[C@H]4C[C@H](O)CC[C@]4(C)[C@H]3CC[C@]12C",
+        "matched_by": "ambiguous_connectivity_relaxed",
+        "match_score": 0.0,
+        "matched_drug": null
+      },
+      {
+        "sample_id": "PAIR-000435",
+        "label": 1,
+        "disease": "fatty liver",
+        "query_smiles": "CCCCCCCCCCCCCCCCCCCC(=O)N[C@H]1CC[C@@]2(C)[C@@H](C1)C[C@@H](O)[C@@H]1[C@@H]2C[C@H](O)[C@]2(C)[C@@H]([C@H](C)CCC(=O)O)CC[C@@H]12",
+        "matched_by": "unmatched",
+        "match_score": 0.0,
+        "matched_drug": null
+      }
+    ]
+  }
+]

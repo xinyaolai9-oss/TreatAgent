@@ -1,0 +1,17 @@
+case_no,case_id,drug,disease,split,benchmark_label,treatagent_prediction,treatagent_score,confusion_type,evidence_pattern
+C01,PAIR-000526,Sildenafil,Pulmonary hypertension,drug_disjoint,1,1,0.63,TP,mixed / uncertain
+C02,PAIR-000641,Siponimod (BAF312),Relapsing-remitting multiple sclerosis,drug_disjoint,1,1,0.75,TP,support-rich
+C03,PAIR-000828,Sumatriptan,Migraine,drug_disjoint,1,1,0.82,TP,support-rich
+C04,PAIR-001194,Evocalcet (KHK7580),Secondary hyperparathyroidism,submission_date_separated,1,1,0.75,TP,mixed / uncertain
+C05,PAIR-001005,Curcumin,Bipolar disorder,drug_disjoint,0,0,0.08,TN,conflict-rich
+C06,PAIR-001461,Febuxostat,Coronary artery disease,submission_date_separated,0,0,0.12,TN,conflict-rich
+C07,PAIR-001824,Ruxolitinib,HIV infection,submission_date_separated,0,0,0.090941,TN,missing-evidence
+C08,PAIR-001006,Zafirlukast,Breast cancer,drug_disjoint,0,0,0.11,TN,conflict-rich / missing evidence
+C09,PAIR-000700,Mechlorethamine,Mycosis fungoides,drug_disjoint,1,1,0.67,TP,support-rich
+C10,PAIR-001952,Dolutegravir,HIV,submission_date_separated,1,1,0.45,TP,support-rich
+C11,PAIR-001089,Tozadenant,Idiopathic Parkinson disease,submission_date_separated,0,0,0.12,TN,conflict-rich
+C12,PAIR-002079,Niclosamide,Colon cancer,drug_disjoint,0,0,0.18,TN,conflict-rich
+C13,PAIR-000535,Hydroxychloroquine,Systemic lupus erythematosus,drug_disjoint,0,1,0.75,FP,mixed / uncertain
+C14,PAIR-000501,Macitentan,Pulmonary arterial hypertension,drug_disjoint,0,1,0.63,FP,conflict-rich
+C15,PAIR-000164,Aspirin,Acute coronary syndrome,submission_date_separated,1,0,0.12,FN,conflict-rich
+C16,PAIR-000496,Atezolizumab,Bladder cancer,submission_date_separated,1,0,0.12,FN,conflict-rich

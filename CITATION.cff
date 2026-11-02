@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use TreatAgent, please cite the archived software release and the associated manuscript when available."
+title: "Agentic Integration of Multi-Source Biomedical Evidence towards Explainable Drug Repurposing"
+type: software
+version: "1.0.0"
+date-released: "2026-11-02"
+license: Apache-2.0
+authors:
+  - family-names: Lai
+    given-names: Xinyao
+  - family-names: Li
+    given-names: Ning
+  - family-names: Xie
+    given-names: Yifeng
+  - family-names: Lu
+    given-names: Yi
+  - family-names: Xu
+    given-names: Hongxia
+  - family-names: Hao
+    given-names: Yuxuan
+  - family-names: Hu
+    given-names: Lianting
+  - family-names: Wu
+    given-names: Yanlin
+  - family-names: Fu
+    given-names: Tianfan
+  - family-names: Chen
+    given-names: Jintai
+repository-code: "https://github.com/xinyaolai9-oss/TreatAgent"
+url: "https://github.com/xinyaolai9-oss/TreatAgent"

@@ -1,0 +1,27 @@
+{
+  "extraction": {
+    "raw_rows": 17614,
+    "parse_errors": 0,
+    "single_disease_single_smiles_rows": 5143,
+    "filtered_disease_rows": 1185,
+    "kept_rows": 3958,
+    "label_counts": {
+      "0": 1760,
+      "1": 2198
+    }
+  },
+  "pair_dataset": {
+    "input_rows": 3958,
+    "valid_canonical_smiles_rows": 3958,
+    "invalid_smiles_rows": 0,
+    "unique_pair_candidates": 2455,
+    "pair_rows": 2160,
+    "conflict_pairs_removed": 295,
+    "label_counts": {
+      "0": 1054,
+      "1": 1106
+    },
+    "unique_drugs": 828,
+    "unique_diseases": 686
+  }
+}

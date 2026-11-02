@@ -1,0 +1,16 @@
+{
+  "model_identifier": "MPNN_CNN_BindingDB",
+  "framework": "DeepPurpose 0.1.5",
+  "source": "DeepPurpose pretrained model archive retained by the TreatAgent study",
+  "files": {
+    "config.pkl": {
+      "bytes": 411,
+      "sha256": "a6371ee448684a04d34574f7a08c4d3e5716bbc4bf0c3b3da5b4f4eec4046429"
+    },
+    "model.pt": {
+      "bytes": 8905648,
+      "sha256": "f0fb70eeca5ca4744be754ebbbb63affd52acc1e34ccb22c4024554c0b37b7bf"
+    }
+  },
+  "release_note": "The hashes match the model files recorded in the repository's original Git LFS history. TreatAgent loads this packaged copy by default."
+}

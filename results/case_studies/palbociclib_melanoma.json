@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "metrics": {},
+  "method": "multiagent",
+  "workflow": "TreatAgent",
+  "agent_version": "full",
+  "threshold": 0.2,
+  "split": "case_study",
+  "total_samples": 1,
+  "positive_samples": 0,
+  "negative_samples": 1,
+  "run_metadata": {
+    "description": "Paper case study: Palbociclib–melanoma.",
+    "component_removed": null,
+    "model_identifier": "gpt-4",
+    "records_are_frozen": true
+  },
+  "provenance": {
+    "kind": "frozen_case_study_conversion",
+    "source_file": "results_multiagent_full_all_case_study.json",
+    "source_sha256": "b67aa07ecdb4bf303867d3439dd22ce954a4d1e41df628e86456a6445c8471d7",
+    "source_collection": "case_study"
+  },
+  "results": [
+    {
+      "index": 11,
+      "sample_id": "RECENT-011",
+      "smiles": "CC(=O)c1c(C)c2cnc(Nc3ccc(N4CCNCC4)cn3)nc2n(C2CCCC2)c1=O",
+      "disease": "melanoma",
+      "drug_names": [
+        "palbociclib",
+        "Ibrance",
+        "PD-0332991"
+      ],
+      "label": 0,
+      "method": "multiagent",
+      "workflow": "TreatAgent",
+      "agent_version": "full",
+      "prediction_score": 0.19,
+      "prediction_binary": 0,
+      "threshold": 0.2,
+      "score_semantics": "continuous_research_priority",
+      "source_score_field": "llm_judge_probability",
+      "correct": true,
+      "model_output": {
+        "treatment_score": 0.19,
+        "confidence": 0.64,
+        "uncertainty": "medium",
+        "grade_reason": "Weak evidence due to no direct drug-disease indication and lack of direct disease-specific mechanistic grounding. Limited indirect relevance exists through neutral disease-associated targets and pathways but without cross-source consistency.",
+        "key_support": [
+          "melanoma-associated targets (e.g., BRAF, CDKN2A) are disease-relevant"
+        ],
+        "key_conflict": [
+          "no direct drug-disease indication support"
+        ],
+        "missing_evidence": [
+          "direct indication evidence from DrugInfo"
+        ],
+        "reasoning_summary": "The candidate molecule for melanoma lacks direct drug-disease indication evidence and robust disease-specific mechanistic grounding. While melanoma-associated targets and pathways are highlighted, no drug-related evidence supports their connection. Clinical feasibility is moderate, and there is no identified safety conflict, but overall evidence is insufficient for prioritization."
+      },
+      "evidence_summary": {
+        "queried_sources": [
+          "TrialPrior",
+          "DTI",
+          "DiseaseInfo",
+          "DrugInfo"
+        ],
+        "source_records": {
+          "TrialPrior": {
+            "status": "ok",
+            "evidence_count": 1,
+            "representative_claims": [
+              "Historical disease-level success rate informs translational feasibility but is not drug-specific treatment evidence."
+            ]
+          },
+          "DTI": {
+            "status": "ok",
+            "evidence_count": 4,
+            "representative_claims": [
+              "Drug target context (CDK2) is weakly consistent with disease pathway context (Paradoxical activation of RAF signaling by kinase inactive BRAF).",
+              "DeepPurpose predicts sequence-level binding plausibility for protein target BRAF.",
+              "DeepPurpose predicts sequence-level binding plausibility for protein target CDKN2A."
+            ]
+          },
+          "DiseaseInfo": {
+            "status": "ok",
+            "evidence_count": 13,
+            "representative_claims": [
+              "DiseaseInfo associates melanoma with target BRAF.",
+              "DiseaseInfo associates melanoma with target CDKN2A.",
+              "DiseaseInfo associates melanoma with target PTEN."
+            ]
+          },
+          "DrugInfo": {
+            "status": "ok",
+            "evidence_count": 6,
+            "representative_claims": [
+              "DrugCentral records palbociclib as an approved or clinically annotated molecule.",
+              "DrugCentral annotates palbociclib with target or mechanism prior on CDK4.",
+              "DrugCentral annotates palbociclib with target or mechanism prior on CDK6."
+            ]
+          }
+        },
+        "source_coverage": {
+          "TrialPrior": 1,
+          "DTI": 4,
+          "DiseaseInfo": 13,
+          "DrugInfo": 6
+        },
+        "supportive_evidence_count": 4,
+        "conflict_evidence_count": 1,
+        "mean_confidence": 0.7392,
+        "conflict_level": 0.0417,
+        "top_evidence": [
+          "DiseaseInfo records IPILIMUMAB as a clinically relevant therapy prior for melanoma.",
+          "DiseaseInfo records PEMBROLIZUMAB as a clinically relevant therapy prior for melanoma.",
+          "DiseaseInfo records NIVOLUMAB as a clinically relevant therapy prior for melanoma.",
+          "DiseaseInfo records VEMURAFENIB as a clinically relevant therapy prior for melanoma."
+        ],
+        "planner_trace": [
+          {
+            "round": 1,
+            "action": "TrialPrior",
+            "reason": "TrialPrior is the cheapest high-yield evidence source, so query it first for budgeted triage.",
+            "planner_question": "Estimate whether melanoma has favorable disease-level translational feasibility and whether TrialPrior should support or weaken the treatment hypothesis."
+          },
+          {
+            "round": 2,
+            "action": "DTI",
+            "reason": "Mechanism evidence is highly valuable to address the critical missing element of mechanism plausibility, which blocks progress and decision-making.",
+            "planner_question": "Does this molecule have validated target interaction plausibility relevant to melanoma, including disease targets or overlapping with drug targets?"
+          },
+          {
+            "round": 3,
+            "action": "DiseaseInfo",
+            "reason": "DiseaseInfo offers high expected evidence value, addressing key gaps in disease context and target/pathway mechanism conflicts.",
+            "planner_question": "Can you identify relevant disease-specific targets, pathways, or therapy priors for melanoma, particularly with potential overlap against CDK2, PTEN, CDKN2A, and BRAF?"
+          },
+          {
+            "round": 4,
+            "action": "DrugInfo",
+            "reason": "DrugInfo has the highest utility remaining and addresses a critical gap in drug context evidence for the current query.",
+            "planner_question": "What are the drug-side indications, known targets, and drug class priors for the molecule characterized by the SMILES string 'CC(=O)c1c(C)c2cnc(Nc3ccc(N4CCNCC4)cn3)nc2n(C2CCCC2)c1=O' in the context of melanoma?"
+          },
+          {
+            "round": 5,
+            "action": "STOP",
+            "reason": "The remaining budget is exhausted, conflict is low, and the evidence collected from the four queried experts sufficiently supports further decision-making without marginal value from additional evidence.",
+            "planner_question": "No further expert question is needed; decide whether the current evidence is sufficient for STOP."
+          }
+        ]
+      }
+    }
+  ]
+}

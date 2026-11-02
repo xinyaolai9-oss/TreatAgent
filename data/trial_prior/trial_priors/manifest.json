@@ -1,0 +1,32 @@
+{
+  "definition": "T(d) = sum(y_j) / n_d over matching pairs in the corresponding training partition",
+  "matching_input": "normalized_disease",
+  "smoothing": "none",
+  "splits": {
+    "drug_disjoint": {
+      "audit_csv": "data/trial_prior/trial_priors/drug_disjoint_audit.csv",
+      "audit_csv_sha256": "30080d2caa1c925fab099713b1956898943210c53ec98ed7803965fbb4107642",
+      "input": "data/benchmark/splits/drug_disjoint_train.json",
+      "input_sha256": "0521b053d696cea97d7eb16b80b9f6ab67248378251dfc6bc28e0dcbd275865b",
+      "negative_pairs": 767,
+      "positive_pairs": 745,
+      "runtime_json": "data/trial_prior/trial_priors/drug_disjoint.json",
+      "runtime_json_sha256": "b8cb8d1f26c0d4d3280141e9ea6274f406fc8456475be3d97328f255a49807b4",
+      "training_pairs": 1512,
+      "unique_normalized_diseases": 594
+    },
+    "submission_date_separated": {
+      "audit_csv": "data/trial_prior/trial_priors/submission_date_separated_audit.csv",
+      "audit_csv_sha256": "25ecd50ce652a33d5183b50236b7c332718e9b7cf05c15a60776e0eda7f5adb5",
+      "input": "data/benchmark/splits/temporal_submit_train.json",
+      "input_sha256": "699ec847226d9ef9d396b8fbc59fe0208ee783cc24bd9bd8f7f5250b9395a990",
+      "negative_pairs": 761,
+      "positive_pairs": 751,
+      "runtime_json": "data/trial_prior/trial_priors/submission_date_separated.json",
+      "runtime_json_sha256": "571fbffd5766fd5d0f12e2191beba014570a7000da971f90a1cd172eef10265f",
+      "training_pairs": 1512,
+      "unique_normalized_diseases": 507
+    }
+  },
+  "validation_or_test_records_read": false
+}

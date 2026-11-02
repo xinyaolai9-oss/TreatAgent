@@ -1,0 +1,11 @@
+comparison,split,metric,difference,ci_lower,ci_upper
+TreatAgent - RAG+Tools,drug_disjoint,auroc,0.08,0.028,0.133
+TreatAgent - RAG+Tools,drug_disjoint,auprc,0.084,0.034,0.132
+TreatAgent - RAG+Tools,submission_date_separated,auroc,0.003,-0.057,0.068
+TreatAgent - RAG+Tools,submission_date_separated,auprc,0.011,-0.04,0.063
+TreatAgent - RAG+Tools,drug_disjoint,balanced_accuracy,0.066,0.012,0.118
+TreatAgent - RAG+Tools,submission_date_separated,balanced_accuracy,-0.009,-0.068,0.054
+TreatAgent - Without planner,drug_disjoint,f1,0.069,0.032,0.11
+TreatAgent - Without planner,submission_date_separated,f1,0.063,0.016,0.111
+TreatAgent - Without candidate-level integration,drug_disjoint,auroc,0.123,0.051,0.189
+TreatAgent - Without candidate-level integration,submission_date_separated,auroc,0.13,0.059,0.202

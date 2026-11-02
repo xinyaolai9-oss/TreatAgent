@@ -1,0 +1,25 @@
+variable,category,count,denominator
+professional_role,Clinical researcher,4,14
+professional_role,Clinician,4,14
+professional_role,Medical student or resident,1,14
+professional_role,Pharmacist or clinical pharmacologist,5,14
+primary_expertise_area,Cardiology or pulmonary vascular medicine,3,14
+primary_expertise_area,Clinical pharmacology or pharmacy,5,14
+primary_expertise_area,Endocrinology or metabolic disease,1,14
+primary_expertise_area,"Immunology, rheumatology, dermatology, or gastroenterology",2,14
+primary_expertise_area,Neurology or psychiatry,1,14
+primary_expertise_area,Oncology or hematology,2,14
+experience_band,1-3 years,4,14
+experience_band,4-6 years,5,14
+experience_band,7-10 years,3,14
+experience_band,Less than 1 year,1,14
+experience_band,More than 10 years,1,14
+drug_repurposing_familiarity,1 Not familiar,4,14
+drug_repurposing_familiarity,2 Slightly familiar,5,14
+drug_repurposing_familiarity,3 Moderately familiar,1,14
+drug_repurposing_familiarity,4 Familiar,1,14
+drug_repurposing_familiarity,5 Very familiar,3,14
+ai_evidence_review_familiarity,1 Not familiar,3,14
+ai_evidence_review_familiarity,2 Slightly familiar,5,14
+ai_evidence_review_familiarity,3 Moderately familiar,5,14
+ai_evidence_review_familiarity,4 Familiar,1,14

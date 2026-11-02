@@ -1,0 +1,595 @@
+normalized_disease,positive_pairs,total_pairs,success_rate
+abdominal pain,1,1,1.0
+acidosis,1,1,1.0
+acromegaly,2,2,1.0
+active rheumatoid arthritis,1,1,1.0
+acute bacterial skin and skin structure infections,1,1,1.0
+acute coronary syndrome,2,5,0.4
+acute coronary syndromes,1,2,0.5
+acute cough,0,1,0.0
+acute graft versus host disease,0,1,0.0
+acute ischemic stroke,0,1,0.0
+acute kidney injury,1,1,1.0
+acute leukemia,1,2,0.5
+acute lymphoblastic leukemia,3,3,1.0
+acute lymphocytic leukemia,1,1,1.0
+acute migraine,1,1,1.0
+acute myelogenous leukemia,2,4,0.5
+acute myeloid leukemia,4,7,0.5714285714285714
+acute myocardial infarction,2,3,0.6666666666666666
+acute optic neuritis,1,1,1.0
+acute pain,1,1,1.0
+acute promyelocytic leukemia,1,1,1.0
+acute upper respiratory tract infections,1,1,1.0
+adenocarcinoma of head of pancreas,0,1,0.0
+adenocarcinoma of the prostate,2,3,0.6666666666666666
+adenocarcinoma pancreas,0,1,0.0
+adhd specifically with executive function impairment,1,1,1.0
+adolescent idiopathic scoliosis,0,1,0.0
+advanced adult hepatocellular carcinoma,1,2,0.5
+advanced breast cancer,0,1,0.0
+advanced cancer,3,4,0.75
+advanced cancers,0,2,0.0
+advanced clear cell renal carcinoma,0,1,0.0
+advanced hepatocellular carcinoma,1,2,0.5
+advanced solid tumors,7,10,0.7
+advanced urothelial carcinoma,1,1,1.0
+age related macular degeneration,0,2,0.0
+al amyloidosis,0,1,0.0
+alcohol dependence,1,2,0.5
+alcoholism,1,2,0.5
+allergic rhinitis,3,4,0.75
+allergy,1,1,1.0
+alzheimer's disease,1,4,0.25
+amyotrophic lateral sclerosis,3,3,1.0
+analgesia,1,1,1.0
+anemia,2,3,0.6666666666666666
+angina pectoris,2,3,0.6666666666666666
+anklyosing spondylitis,1,1,1.0
+ankylosing spondylitis,3,5,0.6
+ankylosing spondyloarthritis,1,1,1.0
+antibody mediated rejection,0,1,0.0
+anxiety,1,1,1.0
+anxiety disorders,1,1,1.0
+aortic valve stenosis,0,1,0.0
+appendicitis,1,1,1.0
+ascites,0,1,0.0
+asthma,5,10,0.5
+atherosclerosis,1,3,0.3333333333333333
+atherosclerotic cardiovascular disease,1,1,1.0
+atopic dermatitis,6,6,1.0
+atrial fibrillation,1,6,0.16666666666666666
+atrial flutter,0,1,0.0
+attention deficit disorder with hyperactivity,3,4,0.75
+attention deficit hyperactivity disorder,3,3,1.0
+autism,2,3,0.6666666666666666
+autism spectrum disorder,0,1,0.0
+autistic disorder,2,3,0.6666666666666666
+axial psoratic arthritis,1,1,1.0
+benign prostatic hyperplasia,1,2,0.5
+biliary cancer,0,1,0.0
+biliary tract cancer,2,2,1.0
+bipolar disorder,4,8,0.5
+bipolar i disorder,2,2,1.0
+bladder cancer,3,11,0.2727272727272727
+bladder neoplasms,0,1,0.0
+bladder pain syndrome,1,1,1.0
+bleeding,1,1,1.0
+blepharitis,1,1,1.0
+blepharospasm,1,1,1.0
+brain cancer,0,2,0.0
+branch retinal vein occlusion,2,2,1.0
+breast cancer,11,30,0.36666666666666664
+breast carcinoma,0,1,0.0
+breast neoplasms,3,9,0.3333333333333333
+bronchiectasis,0,1,0.0
+bronchiolitis,1,2,0.5
+bronchiolitis obliterans,0,1,0.0
+burkitt lymphoma,1,1,1.0
+cachexia,0,1,0.0
+cancer,15,24,0.625
+cancer of liver,0,1,0.0
+cancer of stomach,0,1,0.0
+carcinoid tumor,1,1,1.0
+cardiac disease,0,1,0.0
+cardiovascular disease,1,2,0.5
+cardiovascular diseases,0,1,0.0
+central retinal vein occlusion,1,1,1.0
+cerebral infarction,0,1,0.0
+cerebrovascular accident,0,3,0.0
+cervical dystonia,1,1,1.0
+chemotherapy symptoms,0,1,0.0
+cholangiocarcinoma,0,1,0.0
+choroidal neovascularization,1,2,0.5
+chronic cluster headache,0,1,0.0
+chronic cough,1,1,1.0
+chronic graft versus host disease,0,2,0.0
+chronic hbv infection,0,1,0.0
+chronic hcv infection,2,2,1.0
+chronic heart failure,1,2,0.5
+chronic hepatitis b,3,4,0.75
+chronic hepatitis c,5,7,0.7142857142857143
+chronic hepatitis c infection,1,1,1.0
+chronic hepatitis c virus,0,1,0.0
+chronic kidney disease,3,3,1.0
+chronic kidney failure,1,1,1.0
+chronic lymphocytic leukaemia,1,2,0.5
+chronic lymphocytic leukemia,4,5,0.8
+chronic migraine,2,2,1.0
+chronic myeloid leukemia,2,5,0.4
+chronic obstructive pulmonary disease,2,3,0.6666666666666666
+chronic pain,3,3,1.0
+chronic phase chronic myeloid leukemia,1,1,1.0
+chronic plaque psoriasis,1,1,1.0
+chronic plaque type psoriasis,1,1,1.0
+chronic renal failure,0,1,0.0
+chronic sinusitis,1,1,1.0
+clear cell renal cell carcinoma,1,1,1.0
+clostridium difficile,0,1,0.0
+clostridium difficile infection,1,1,1.0
+colon cancer,0,4,0.0
+colonic neoplasms,0,2,0.0
+colorectal cancer,3,21,0.14285714285714285
+colorectal cancer metastatic,2,4,0.5
+colorectal carcinoma,0,3,0.0
+colorectal neoplasms,1,4,0.25
+congenital adrenal hyperplasia,1,1,1.0
+congenital heart disease,0,2,0.0
+congestive heart failure,0,5,0.0
+constipation,3,4,0.75
+contraception,3,3,1.0
+coronary arteriosclerosis,0,1,0.0
+coronary artery disease,1,1,1.0
+coronary disease,0,1,0.0
+coronary heart disease,1,1,1.0
+cough,1,4,0.25
+critical illness,0,1,0.0
+crohn disease,2,3,0.6666666666666666
+cutaneous melanoma,0,1,0.0
+cystic fibrosis,3,3,1.0
+cytomegalovirus infections,1,1,1.0
+deep vein thrombosis,0,1,0.0
+deep venous thrombosis,2,3,0.6666666666666666
+dehydration,0,1,0.0
+delayed graft function,0,1,0.0
+dementia,0,1,0.0
+dementia with lewy bodies,0,1,0.0
+depression,1,6,0.16666666666666666
+depressive disorder,2,2,1.0
+detectable prostate nodules,0,1,0.0
+detrusor muscle hyperactivity,1,1,1.0
+diabetes,2,2,1.0
+diabetes mellitus,3,3,1.0
+diabetic foot infections,1,1,1.0
+diabetic gastroparesis,0,2,0.0
+diabetic macular edema,1,2,0.5
+diabetic nephropathies,1,1,1.0
+diabetic nephropathy,1,1,1.0
+diabetic neuropathic pain,1,1,1.0
+diabetic neuropathies,1,2,0.5
+diabetic neuropathy,1,1,1.0
+diabetic peripheral neuropathic pain,1,1,1.0
+diabetic peripheral neuropathy,0,2,0.0
+diabetic retinopathy,1,2,0.5
+diarrhea predominant irritable bowel syndrome,1,1,1.0
+diffuse large b cell lymphoma,1,3,0.3333333333333333
+dravet syndrome,1,1,1.0
+dry eye,5,5,1.0
+dry eye disease,1,2,0.5
+dry eye syndrome,2,2,1.0
+dry eye syndromes,2,2,1.0
+duchenne muscular dystrophy,1,3,0.3333333333333333
+ductal carcinoma in situ,0,1,0.0
+dyspepsia,0,1,0.0
+dysthymic disorder,1,1,1.0
+early rheumatoid arthritis,1,1,1.0
+eczema,0,1,0.0
+elevated prostate specific antigen,0,1,0.0
+embolism,1,1,1.0
+emphysema,0,1,0.0
+end stage renal disease,4,5,0.8
+endometrial cancer,3,6,0.5
+endometrial carcinoma,1,1,1.0
+endometriosis,1,3,0.3333333333333333
+endometritis,0,1,0.0
+eosinophilic asthma,1,1,1.0
+eosinophilic esophagitis,2,2,1.0
+epidermolysis bullosa,1,2,0.5
+epilepsy,8,8,1.0
+epithelial cancer,0,1,0.0
+epithelial ovarian cancer,2,2,1.0
+equinus contracture,0,1,0.0
+esophageal cancer,2,7,0.2857142857142857
+esophageal carcinoma,2,2,1.0
+esophageal metaplasia,0,1,0.0
+esophageal neoplasms,2,3,0.6666666666666666
+esophageal squamous cell carcinoma,1,1,1.0
+esophagitis,0,1,0.0
+essential hypertension,6,6,1.0
+essential tremor,1,1,1.0
+essential tremor of the upper limbs,1,1,1.0
+external genital warts,1,1,1.0
+exudative macular degeneration,1,1,1.0
+familial hypercholesterolemia,1,1,1.0
+familial partial lipodystrophy,1,1,1.0
+fibromyalgia,5,6,0.8333333333333334
+follicular lymphoma,2,3,0.6666666666666666
+fracture healing,0,1,0.0
+friedreich ataxia,1,1,1.0
+functional dyspepsia,2,2,1.0
+gallbladder cancer,0,1,0.0
+gastric adenocarcinoma,1,1,1.0
+gastric cancer,6,9,0.6666666666666666
+gastric carcinoma,0,1,0.0
+gastroesophageal reflux,2,2,1.0
+gastroesophageal reflux disease,2,3,0.6666666666666666
+gastrointestinal cancer,0,1,0.0
+gastrointestinal neoplasms,1,1,1.0
+gastrointestinal stromal tumor,1,1,1.0
+gastrointestinal stromal tumors,3,3,1.0
+gastroparesis,1,1,1.0
+generalized anxiety disorder,3,4,0.75
+glioblastoma multiforme,1,6,0.16666666666666666
+glucose intolerance,0,1,0.0
+gout,1,2,0.5
+graft rejection,0,1,0.0
+graft versus host disease,1,4,0.25
+growth hormone deficiency,0,1,0.0
+hand osteoarthritis,1,1,1.0
+hcv infection,1,1,1.0
+head and neck cancer,2,10,0.2
+head and neck neoplasms,1,3,0.3333333333333333
+head and neck squamous cell carcinoma,0,1,0.0
+heart disease,1,1,1.0
+heart failure,2,6,0.3333333333333333
+heart transplantation,0,1,0.0
+heartburn,1,1,1.0
+hematologic malignancies,1,4,0.25
+hematologic neoplasms,1,1,1.0
+hematological malignancies,1,1,1.0
+hemophilia a,1,1,1.0
+hepatitis b,1,3,0.3333333333333333
+hepatitis c,5,9,0.5555555555555556
+hepatitis c infection,1,1,1.0
+hepatitis c virus,0,1,0.0
+hepatitis c virus infection,1,1,1.0
+hepatocellular cancer,0,1,0.0
+hepatocellular carcinoma,2,7,0.2857142857142857
+herpes zoster,1,1,1.0
+heterozygous familial hypercholesterolemia,1,1,1.0
+high risk smoldering multiple myeloma,0,1,0.0
+hilar cholangiocarcinoma,0,1,0.0
+hiv,2,4,0.5
+hiv infection,3,11,0.2727272727272727
+hodgkin disease,1,2,0.5
+hodgkin lymphoma,2,6,0.3333333333333333
+hodgkins lymphoma,1,1,1.0
+homozygous familial hypercholesterolemia,2,2,1.0
+hormone refractory prostate cancer,2,3,0.6666666666666666
+human immunodeficiency virus,3,3,1.0
+huntington disease,1,1,1.0
+hypercholesterolemia,3,4,0.75
+hyperlipidemia,3,3,1.0
+hyperlipidemia or mixed dyslipidemia at high risk for cardiovascular events,1,1,1.0
+hypertension,7,9,0.7777777777777778
+hypoglycemia,1,1,1.0
+hypothalamic obesity,0,1,0.0
+idiopathic dilated cardiomyopathy,0,1,0.0
+idiopathic gastroparesis,0,1,0.0
+idiopathic pulmonary fibrosis,1,2,0.5
+immunosuppression,0,1,0.0
+impetigo,1,1,1.0
+in vitro fertilization,1,1,1.0
+infection,1,3,0.3333333333333333
+infertility,3,4,0.75
+inflammatory bowel disease,0,1,0.0
+influenza a,1,1,1.0
+insomnia,2,2,1.0
+insomnia disorder,1,1,1.0
+interstitial cystitis,1,2,0.5
+intracerebral hemorrhage,0,1,0.0
+intraocular melanoma,0,1,0.0
+irritable bowel syndrome,1,2,0.5
+irritable bowel syndrome constipation predominant,1,1,1.0
+irritable bowel syndrome with diarrhea,1,1,1.0
+ischemia,0,1,0.0
+ischemic cardiomyopathy,1,1,1.0
+ischemic stroke,1,4,0.25
+isolated systolic hypertension,1,1,1.0
+juvenile idiopathic arthritis,1,1,1.0
+keratoconjunctivitis sicca,1,2,0.5
+kidney cancer,1,12,0.08333333333333333
+kidney diseases,2,3,0.6666666666666666
+kidney neoplasms,1,1,1.0
+kidney transplant,1,2,0.5
+kidney transplantation,5,7,0.7142857142857143
+knee osteoarthritis,0,1,0.0
+knee pain,1,1,1.0
+left ventricular diastolic dysfunction,1,1,1.0
+leukemia,6,13,0.46153846153846156
+liver cancer,6,9,0.6666666666666666
+liver carcinoma,0,1,0.0
+liver neoplasms,0,1,0.0
+liver transplantation,2,3,0.6666666666666666
+low back pain,1,1,1.0
+lower urinary tract symptoms,1,1,1.0
+lumbar spinal stenosis,0,1,0.0
+lung adenocarcinoma,1,2,0.5
+lung cancer,1,18,0.05555555555555555
+lung neoplasm,1,1,1.0
+lupus,0,1,0.0
+lupus nephritis,1,3,0.3333333333333333
+lymphoma,6,20,0.3
+macular degeneration,0,1,0.0
+macular edema,1,2,0.5
+macular edema associated with diabetes mellitus,1,1,1.0
+macular edema secondary to branch retinal vein occlusion,1,1,1.0
+major depression,2,3,0.6666666666666666
+major depressive disorder,5,6,0.8333333333333334
+malaria,1,1,1.0
+malignant ascites,0,1,0.0
+malignant glioma,2,3,0.6666666666666666
+malignant melanoma,2,4,0.5
+malignant mesothelioma,2,6,0.3333333333333333
+malignant pleural mesothelioma,3,6,0.5
+mantle cell lymphoma,3,5,0.6
+medullary thyroid carcinoma,0,1,0.0
+meibomian gland dysfunction,0,1,0.0
+melanoma,4,14,0.2857142857142857
+melanoma and brain metastases,1,1,1.0
+meningitis,0,1,0.0
+menopausal and female climacteric states,0,1,0.0
+mesothelioma,2,5,0.4
+metabolic syndrome x,0,1,0.0
+metastatic alveolar soft part sarcoma,0,1,0.0
+metastatic breast cancer,4,14,0.2857142857142857
+metastatic cancer,1,1,1.0
+metastatic clear cell renal cell carcinoma,0,1,0.0
+metastatic colorectal cancer,4,13,0.3076923076923077
+metastatic melanoma,4,6,0.6666666666666666
+metastatic pancreatic adenocarcinoma,1,2,0.5
+metastatic pancreatic cancer,2,2,1.0
+metastatic prostate cancer,2,4,0.5
+metastatic renal cell cancer,1,1,1.0
+metastatic renal cell carcinoma,2,4,0.5
+metastatic urothelial carcinoma,0,1,0.0
+migraine,5,5,1.0
+migraine disorders,2,2,1.0
+migraine headache,1,1,1.0
+migraine prophylaxis,1,1,1.0
+mild asthma,1,1,1.0
+moderate to severe glabellar lines,1,1,1.0
+moderate to very severe chronic obstructive pulmonary disease,0,1,0.0
+mood disorders,1,1,1.0
+morbid obesity,0,1,0.0
+motor neuron disease,0,1,0.0
+multiple myeloma,2,11,0.18181818181818182
+multiple myeloma and plasma cell neoplasm,1,1,1.0
+multiple sclerosis,5,12,0.4166666666666667
+myelodysplastic syndrome,4,10,0.4
+myelodysplastic syndromes,1,5,0.2
+myelofibrosis,0,4,0.0
+myeloma,0,1,0.0
+myocardial infarction,1,4,0.25
+myocardial ischemia,1,1,1.0
+narcolepsy,3,4,0.75
+nasopharyngeal cancer,0,1,0.0
+nasopharyngeal carcinoma,1,3,0.3333333333333333
+nasopharyngeal neoplasms,0,2,0.0
+nausea,0,1,0.0
+nausea and vomiting,0,1,0.0
+neonatal seizures,0,1,0.0
+neuralgia,0,1,0.0
+neuroendocrine carcinoma,0,1,0.0
+neuroendocrine tumors,1,1,1.0
+neuropathic pain,4,4,1.0
+neuropathic pain due to spinal cord injury,0,1,0.0
+nicotine dependence,1,2,0.5
+non small cell lung cancer,5,14,0.35714285714285715
+non small cell lung carcinoma,0,2,0.0
+nonalcoholic steatohepatitis,1,2,0.5
+nonproliferative diabetic retinopathy,0,1,0.0
+normal tension glaucoma,1,1,1.0
+obesity,0,3,0.0
+obsessive compulsive disorder,3,3,1.0
+obstructive sleep apnea,0,1,0.0
+ocular hypertension,1,1,1.0
+odontogenic infection,0,1,0.0
+oral contraceptive,0,1,0.0
+oral mucositis,0,1,0.0
+oropharyngeal neoplasms,0,1,0.0
+osteoarthritis,4,5,0.8
+osteoarthritis of the knee,5,6,0.8333333333333334
+osteogenesis imperfecta,1,1,1.0
+osteoporosis,4,6,0.6666666666666666
+osteoporosis in men,1,1,1.0
+ovarian cancer,4,18,0.2222222222222222
+ovarian carcinoma,1,2,0.5
+ovarian neoplasm,1,1,1.0
+ovarian neoplasms,3,4,0.75
+overactive bladder,1,2,0.5
+pain,2,4,0.5
+pain management,1,1,1.0
+painful diabetic neuropathy,0,1,0.0
+painful diabetic peripheral neuropathy,1,1,1.0
+palmoplantar pustulosis,1,1,1.0
+pancreas cancer,0,2,0.0
+pancreatic adenocarcinoma,1,1,1.0
+pancreatic cancer,1,12,0.08333333333333333
+pancreatic ductal adenocarcinoma,1,3,0.3333333333333333
+pancreatic neoplasms,1,3,0.3333333333333333
+pancreatitis,0,1,0.0
+panic disorder,1,2,0.5
+papillary renal cell carcinoma,1,1,1.0
+parkinson disease,3,4,0.75
+paroxysmal atrial fibrillation,1,1,1.0
+partial seizures,1,2,0.5
+pelvic pain,1,1,1.0
+peptic ulcer,1,1,1.0
+perennial allergic rhinitis,0,1,0.0
+perianal fistula,0,1,0.0
+peripheral arterial disease,0,1,0.0
+peripheral neuropathy,0,1,0.0
+peripheral vascular diseases,0,1,0.0
+peritoneal neoplasms,1,1,1.0
+pharyngitis,1,2,0.5
+phenylketonuria,1,1,1.0
+plaque psoriasis,3,4,0.75
+plasmodium falciparum infection,1,1,1.0
+plasmodium falciparum malaria,0,1,0.0
+pneumonia,0,1,0.0
+pneumonia due to staphylococcus aureus,1,1,1.0
+polycystic ovary syndrome,0,1,0.0
+polycythemia vera,1,3,0.3333333333333333
+portal vein thrombosis,1,1,1.0
+portopulmonary hypertension,1,1,1.0
+post menopausal osteoporosis,1,1,1.0
+postherpetic neuralgia,0,1,0.0
+postmenopausal osteoporosis,2,3,0.6666666666666666
+postmenopausal women with osteoporosis,1,1,1.0
+postpartum depression,2,2,1.0
+posttraumatic stress disorder,1,2,0.5
+pregnancy,0,1,0.0
+previously treated advanced colorectal cancer,0,1,0.0
+primary biliary cirrhosis,0,2,0.0
+primary central nervous system lymphoma,0,3,0.0
+primary insomnia,1,1,1.0
+primary myelofibrosis,0,1,0.0
+primary sclerosing cholangitis,1,1,1.0
+progressive supranuclear palsy,0,1,0.0
+proliferative diabetic retinopathy,3,4,0.75
+prostate adenocarcinoma,1,1,1.0
+prostate cancer,13,36,0.3611111111111111
+prostate cancer metastatic,0,3,0.0
+prostatic neoplasms,5,5,1.0
+pruritus,1,1,1.0
+pseudomonas aeruginosa infection,0,1,0.0
+psoriasis,7,11,0.6363636363636364
+psoriasis vulgaris,2,3,0.6666666666666666
+psoriatic arthritis,6,6,1.0
+psychosis,1,1,1.0
+pulmonary arterial hypertension,2,5,0.4
+pulmonary fibrosis,1,1,1.0
+pulmonary hypertension,2,5,0.4
+radiation necrosis,0,1,0.0
+rectal cancer,1,5,0.2
+rectal carcinoma,1,1,1.0
+recurrent glioblastoma,0,3,0.0
+recurrent malignant gliomas,0,1,0.0
+recurrent mantle cell lymphoma,1,1,1.0
+recurrent ovarian cancer,2,2,1.0
+recurrent ovarian carcinoma,0,1,0.0
+recurrent respiratory papillomatosis,0,1,0.0
+recurrent small cell lung cancer,0,1,0.0
+recurrent small cell lung carcinoma,1,2,0.5
+recurrent uterine corpus carcinoma,0,1,0.0
+refractory chronic cough,1,1,1.0
+refractory generalized myasthenia gravis,0,1,0.0
+refractory multiple myeloma,0,1,0.0
+relapsing forms of multiple sclerosis,1,1,1.0
+relapsing multiple sclerosis,2,2,1.0
+relapsing remitting multiple sclerosis,0,2,0.0
+renal cancer,0,1,0.0
+renal cell cancer,0,1,0.0
+renal cell carcinoma,4,8,0.5
+renal impairment,1,1,1.0
+renal transplantation,1,2,0.5
+resectable pancreatic cancer,1,2,0.5
+respiratory disorders,1,1,1.0
+respiratory syncytial virus,1,1,1.0
+respiratory syncytial virus infections,1,1,1.0
+restless leg syndrome,1,1,1.0
+restless legs syndrome,1,3,0.3333333333333333
+retinal vein occlusion,3,3,1.0
+rett syndrome,1,1,1.0
+rheumatoid arthritis,6,9,0.6666666666666666
+rhinitis,1,1,1.0
+rhinovirus,1,1,1.0
+salivary gland malignancy,0,1,0.0
+sarcoma,5,12,0.4166666666666667
+schizophrenia,4,8,0.5
+scleroderma,0,1,0.0
+seasonal allergic rhinitis,2,2,1.0
+secondary hyperparathyroidism,1,1,1.0
+secondary progressive multiple sclerosis,0,2,0.0
+seizures,1,1,1.0
+sepsis,0,3,0.0
+septic shock,1,2,0.5
+shoulder pain,0,1,0.0
+sickle cell disease,2,4,0.5
+sinusitis,1,1,1.0
+skin cancer,0,1,0.0
+skin diseases,1,1,1.0
+sleep disorders,1,1,1.0
+small bowel carcinoid tumor,0,1,0.0
+small cell lung cancer,4,11,0.36363636363636365
+small cell lung carcinoma,0,2,0.0
+smallpox,1,1,1.0
+smoking,1,3,0.3333333333333333
+smoking cessation,3,5,0.6
+soft tissue infections,0,1,0.0
+soft tissue sarcoma,3,4,0.75
+solid tumor or lymphoma,1,1,1.0
+solid tumors induced by prior radiation exposure,0,1,0.0
+spinal and bulbar muscular atrophy,1,1,1.0
+spinal muscular atrophy,1,1,1.0
+spondyloarthritis,1,1,1.0
+squamous cell cancer of the head and neck,0,1,0.0
+squamous cell carcinoma,0,1,0.0
+squamous cell carcinoma of the head and neck,1,3,0.3333333333333333
+squamous cell carcinoma of the head and neck cancer,0,1,0.0
+squamous cell lung cancer,0,1,0.0
+stable coronary artery disease,1,1,1.0
+stage iiic ovarian cancer,0,1,0.0
+stage iv pancreatic cancer,0,1,0.0
+staphylococcal skin infection,1,1,1.0
+staphylococcal skin infections,0,1,0.0
+steatohepatitis,0,1,0.0
+stomach neoplasms,2,4,0.5
+stress urinary incontinence,0,1,0.0
+stroke,1,3,0.3333333333333333
+submassive pulmonary embolism,1,1,1.0
+surgical site infection,0,1,0.0
+surgical wound infection,0,1,0.0
+systemic mastocytosis,0,1,0.0
+systemic scleroderma,1,1,1.0
+systemic sclerosis,2,2,1.0
+thalassemia major,1,1,1.0
+thromboembolism,1,1,1.0
+thyroid cancer,1,3,0.3333333333333333
+thyroid carcinoma,1,1,1.0
+thyroid neoplasms,2,2,1.0
+tibial fractures,0,1,0.0
+tobacco use disorder,0,2,0.0
+tourette syndrome,3,3,1.0
+transitional cell carcinoma,1,2,0.5
+transitional cell carcinoma of the bladder,1,1,1.0
+traumatic brain injury,0,1,0.0
+treatment for prevention of chronic migraine,1,1,1.0
+treatment resistant depression,0,2,0.0
+triple negative breast cancer,1,1,1.0
+tuberculosis,0,1,0.0
+tumor,1,2,0.5
+tumors,2,4,0.5
+ulcerative colitis,1,4,0.25
+unresectable pleural or peritoneal malignant mesothelioma,0,1,0.0
+unstable angina,0,1,0.0
+untreated childhood brain stem glioma,0,1,0.0
+urinary bladder cancer,0,1,0.0
+urinary bladder neoplasms,0,1,0.0
+urinary incontinence,1,1,1.0
+urinary tract infection,1,2,0.5
+urinary tract infections,1,1,1.0
+urothelial carcinoma,1,3,0.3333333333333333
+uterine cancer,0,2,0.0
+uveal melanoma,0,2,0.0
+uveitis,0,1,0.0
+vascular dementia,1,1,1.0
+vascular disease,1,1,1.0
+venous thromboembolism,2,3,0.6666666666666666
+venous thrombosis,1,2,0.5
+ventricular tachycardia,0,1,0.0
+vulvodynia,0,1,0.0
+waldenstrom macroglobulinemia,1,2,0.5
+wet macular degeneration,1,1,1.0
+wound infections,0,1,0.0

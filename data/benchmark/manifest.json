@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "description": "Final benchmark artifacts used by the TreatAgent manuscript",
+  "construction": {
+    "seed": 13,
+    "raw_source": {
+      "path": "raw_data.csv",
+      "bytes": 57532756,
+      "sha256": "804c394666b21f4ecffe20e885b458bd8d90fb665622fe0fd664a51f8b64ef4c"
+    },
+    "pair_dataset": {
+      "path": "processed/pair_level_dataset.json",
+      "bytes": 1289546,
+      "sha256": "545f3fa249733f477392cc7cc8c30bb08501c8fea6f43265717a5a6d3b624449",
+      "rows": 2160,
+      "label_counts": {
+        "0": 1054,
+        "1": 1106
+      },
+      "unique_drugs": 828,
+      "unique_diseases": 686
+    },
+    "trial_date_snapshot": {
+      "path": "processed/nctid_trial_dates.json",
+      "bytes": 1340626,
+      "sha256": "3baea3ed2b791acce3238198bbbede35dc491e957c98e5ad53e84aafdbf1e413"
+    },
+    "build_stats": {
+      "path": "processed/build_stats.json",
+      "bytes": 565,
+      "sha256": "534408db4a5e628815301f135b2ea692f53245ef360a690b8ce253127a5e4fc6",
+      "summary": {
+        "extraction": {
+          "raw_rows": 17614,
+          "parse_errors": 0,
+          "single_disease_single_smiles_rows": 5143,
+          "filtered_disease_rows": 1185,
+          "kept_rows": 3958,
+          "label_counts": {
+            "0": 1760,
+            "1": 2198
+          }
+        },
+        "pair_dataset": {
+          "input_rows": 3958,
+          "valid_canonical_smiles_rows": 3958,
+          "invalid_smiles_rows": 0,
+          "unique_pair_candidates": 2455,
+          "pair_rows": 2160,
+          "conflict_pairs_removed": 295,
+          "label_counts": {
+            "0": 1054,
+            "1": 1106
+          },
+          "unique_drugs": 828,
+          "unique_diseases": 686
+        }
+      }
+    }
+  },
+  "protocols": {
+    "DD": {
+      "name": "drug-disjoint",
+      "splits": {
+        "train": {
+          "path": "splits/drug_disjoint_train.json",
+          "bytes": 905798,
+          "sha256": "0521b053d696cea97d7eb16b80b9f6ab67248378251dfc6bc28e0dcbd275865b",
+          "rows": 1512,
+          "label_counts": {
+            "0": 767,
+            "1": 745
+          },
+          "unique_drugs": 362,
+          "unique_diseases": 594
+        },
+        "val": {
+          "path": "splits/drug_disjoint_val.json",
+          "bytes": 128680,
+          "sha256": "822eacd182b4064b35defb7c65cae28b55b4251b9da2845ce8a8888dcd5973ed",
+          "rows": 216,
+          "label_counts": {
+            "0": 96,
+            "1": 120
+          },
+          "unique_drugs": 193,
+          "unique_diseases": 145
+        },
+        "test": {
+          "path": "splits/drug_disjoint_test.json",
+          "bytes": 255072,
+          "sha256": "be56756100e31843827387289ddfe6234ff826f1b17571465ccb975e98481ca7",
+          "rows": 432,
+          "label_counts": {
+            "0": 191,
+            "1": 241
+          },
+          "unique_drugs": 273,
+          "unique_diseases": 237
+        }
+      }
+    },
+    "SS": {
+      "name": "submission-date-separated",
+      "splits": {
+        "train": {
+          "path": "splits/temporal_submit_train.json",
+          "bytes": 1132895,
+          "sha256": "699ec847226d9ef9d396b8fbc59fe0208ee783cc24bd9bd8f7f5250b9395a990",
+          "rows": 1512,
+          "label_counts": {
+            "0": 761,
+            "1": 751
+          },
+          "unique_drugs": 665,
+          "unique_diseases": 507,
+          "date_range": [
+            "1999-11-01",
+            "2012-09-03"
+          ]
+        },
+        "val": {
+          "path": "splits/temporal_submit_val.json",
+          "bytes": 159808,
+          "sha256": "69d15b5844e793c9f2d0e10d7f74a57b6e78bfc70abaf4b6261b9d0f35943210",
+          "rows": 216,
+          "label_counts": {
+            "0": 98,
+            "1": 118
+          },
+          "unique_drugs": 140,
+          "unique_diseases": 165,
+          "date_range": [
+            "2012-09-04",
+            "2014-02-27"
+          ]
+        },
+        "test": {
+          "path": "splits/temporal_submit_test.json",
+          "bytes": 316916,
+          "sha256": "acbb4fbc4e489b691eab5dbc3e988801912cfc8aaf6d8f911510021ea95d9e33",
+          "rows": 432,
+          "label_counts": {
+            "0": 195,
+            "1": 237
+          },
+          "unique_drugs": 242,
+          "unique_diseases": 293,
+          "date_range": [
+            "2014-02-28",
+            "2019-03-20"
+          ]
+        }
+      }
+    }
+  }
+}

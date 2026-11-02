@@ -1,0 +1,428 @@
+{
+  "purpose": "Audit metadata for the frozen result release; this file contains no model predictions.",
+  "release_scope": "Final artifacts supporting the submitted TreatAgent manuscript",
+  "raw_json_in_git": false,
+  "candidate_record_files": 22,
+  "candidate_record_rows": 9504,
+  "main_sources": [
+    {
+      "split": "drug_disjoint",
+      "workflow": "Direct",
+      "file": "results_direct_dd_test.json",
+      "sha256": "a42d65f0eef78a335b3bef6ba629a89f7dc32c5f03fa749786c54015773a5c2f",
+      "rows": 432,
+      "threshold": 0.5
+    },
+    {
+      "split": "drug_disjoint",
+      "workflow": "CoT",
+      "file": "results_cot_dd_test.json",
+      "sha256": "ae8b68e429e0cde8fb464f140a736a41339e4fdf725034c10d214bffcf8604d6",
+      "rows": 432,
+      "threshold": 0.5
+    },
+    {
+      "split": "drug_disjoint",
+      "workflow": "RAG+Tools",
+      "file": "results_rag_dd_test.json",
+      "sha256": "dfc0583d54411535d48c77497e0ffb6360f9537d37387260d74d0ba29d959309",
+      "rows": 432,
+      "threshold": 0.4
+    },
+    {
+      "split": "drug_disjoint",
+      "workflow": "TreatAgent",
+      "file": "results_multiagent_dd_test.json",
+      "sha256": "a45fa27f2dc65c713649f229385989c950f7a638fbd89c6005dfe27f29141710",
+      "rows": 432,
+      "threshold": 0.2
+    },
+    {
+      "split": "submission_date_separated",
+      "workflow": "Direct",
+      "file": "results_direct_ts_test.json",
+      "sha256": "b7aaaa1b3cf6d17b15e2c6fa04e6c8930ef30ad91b5a2550f130157bd79e650d",
+      "rows": 432,
+      "threshold": 0.5
+    },
+    {
+      "split": "submission_date_separated",
+      "workflow": "CoT",
+      "file": "results_cot_ts_test.json",
+      "sha256": "0320dca2e820bf12fcbae5d779edb9e64cf2a0f07adf995729f63c1ab4fd4177",
+      "rows": 432,
+      "threshold": 0.5
+    },
+    {
+      "split": "submission_date_separated",
+      "workflow": "RAG+Tools",
+      "file": "results_rag_ts_test.json",
+      "sha256": "6e2bba1128c8dca5bc16eb26684530879d513a39b792094e2d8d54e2d80a6c21",
+      "rows": 432,
+      "threshold": 0.4
+    },
+    {
+      "split": "submission_date_separated",
+      "workflow": "TreatAgent",
+      "file": "results_multiagent_ts_test.json",
+      "sha256": "ca886821b1c55b34f2f6190c33b9bcdbb1bc11ce4d6686be7aad4e7211573327",
+      "rows": 432,
+      "threshold": 0.2
+    }
+  ],
+  "ablation_sources": [
+    {
+      "split": "drug_disjoint",
+      "workflow": "Without planner",
+      "file": "results_multiagent_dd_test_wo_planner.json",
+      "sha256": "59991ebcb6f511bd34bbf7eb16fe7c035c79b5b3cdf8603fa75f0d121858e23e",
+      "rows": 432,
+      "threshold": 0.2
+    },
+    {
+      "split": "drug_disjoint",
+      "workflow": "Without candidate-level integration",
+      "file": "results_multiagent_dd_test_wo_evidencegraph.json",
+      "sha256": "0496f092180d095e36e2b634555c4f6625276aa333c292a9e40737b66f5d5d7d",
+      "rows": 432,
+      "threshold": 0.2
+    },
+    {
+      "split": "drug_disjoint",
+      "workflow": "Without DrugInfo",
+      "file": "results_multiagent_drug_disjoint_wo_drugkb.json",
+      "sha256": "6151f2c1f22c2eb91c4025ae4d339e0b37222a8eaaff2d4d573d3f8825985a57",
+      "rows": 432,
+      "threshold": 0.2
+    },
+    {
+      "split": "drug_disjoint",
+      "workflow": "Without DiseaseInfo",
+      "file": "results_multiagent_drug_disjoint_wo_diseasekb.json",
+      "sha256": "793cbf77174ab427188901f3a995f01fe51aab62a2d6aad1553c59287e9ba7f9",
+      "rows": 432,
+      "threshold": 0.2
+    },
+    {
+      "split": "drug_disjoint",
+      "workflow": "Without DTI",
+      "file": "results_multiagent_drug_disjoint_wo_dti.json",
+      "sha256": "f5ae3a5c5ef932e07616ceaaabab795fda33c62f3fcb426d71ac280b562a88ca",
+      "rows": 432,
+      "threshold": 0.2
+    },
+    {
+      "split": "drug_disjoint",
+      "workflow": "Without ADMET",
+      "file": "results_multiagent_drug_disjoint_wo_admet.json",
+      "sha256": "1fc36f6b54ddc5c74eef74baf176d0e41bbe3e1c333df5918d011fbd6b425422",
+      "rows": 432,
+      "threshold": 0.2
+    },
+    {
+      "split": "drug_disjoint",
+      "workflow": "Without TrialPrior",
+      "file": "results_multiagent_drug_disjoint_wo_clinical.json",
+      "sha256": "a478468dfd17e81ea7ad558fb988463361b2b206e586594ce0ebe52e55061d0e",
+      "rows": 432,
+      "threshold": 0.2
+    },
+    {
+      "split": "submission_date_separated",
+      "workflow": "Without planner",
+      "file": "results_multiagent_ts_test_wo_planner.json",
+      "sha256": "3ed60e23333b2c27e8d915bd3f1710b37d3c56374810b5b57087e395bc675399",
+      "rows": 432,
+      "threshold": 0.2
+    },
+    {
+      "split": "submission_date_separated",
+      "workflow": "Without candidate-level integration",
+      "file": "results_multiagent_ts_test_wo_evidencegraph.json",
+      "sha256": "095288cd1b0ca101c4aa54c1fd1c6982446c8eb820a24c6bad5b7bd6dd487680",
+      "rows": 432,
+      "threshold": 0.2
+    },
+    {
+      "split": "submission_date_separated",
+      "workflow": "Without DrugInfo",
+      "file": "results_multiagent_temporal_submit_wo_drugkb.json",
+      "sha256": "3b6907674e895b6b7c7087294b171b0740b13ed408111dbdf7889778652e22ed",
+      "rows": 432,
+      "threshold": 0.2
+    },
+    {
+      "split": "submission_date_separated",
+      "workflow": "Without DiseaseInfo",
+      "file": "results_multiagent_temporal_submit_wo_diseasekb.json",
+      "sha256": "e695705829fc61cf9a6dd4dbe2f8d4aa2204dd6e7e56d1917e4a5864494b1e27",
+      "rows": 432,
+      "threshold": 0.2
+    },
+    {
+      "split": "submission_date_separated",
+      "workflow": "Without DTI",
+      "file": "results_multiagent_temporal_submit_wo_dti.json",
+      "sha256": "b3dbd85856dcebaa69de0239f4922f8adf7f4d69df09705cbf860c342142b18d",
+      "rows": 432,
+      "threshold": 0.2
+    },
+    {
+      "split": "submission_date_separated",
+      "workflow": "Without ADMET",
+      "file": "results_multiagent_temporal_submit_wo_admet.json",
+      "sha256": "10f2e3b0269d313989b0c95ec23a6cbbd662d4b7895472844c7c8a369576810a",
+      "rows": 432,
+      "threshold": 0.2
+    },
+    {
+      "split": "submission_date_separated",
+      "workflow": "Without TrialPrior",
+      "file": "results_multiagent_temporal_submit_wo_clinical.json",
+      "sha256": "10b71bbb4708b4506b12f644fb386e38c4023effe9647db0a470da690e929a47",
+      "rows": 432,
+      "threshold": 0.2
+    }
+  ],
+  "case_study_sources": [
+    {
+      "file": "case_studies/mavacamten_ohcm.json",
+      "sample_id": "RECENT-009",
+      "priority_score": 0.75,
+      "source_file": "results_multiagent_full_all_case_study.json",
+      "source_sha256": "b67aa07ecdb4bf303867d3439dd22ce954a4d1e41df628e86456a6445c8471d7"
+    },
+    {
+      "file": "case_studies/palbociclib_melanoma.json",
+      "sample_id": "RECENT-011",
+      "priority_score": 0.19,
+      "source_file": "results_multiagent_full_all_case_study.json",
+      "source_sha256": "b67aa07ecdb4bf303867d3439dd22ce954a4d1e41df628e86456a6445c8471d7"
+    },
+    {
+      "file": "case_studies/pirtobrutinib_cll.json",
+      "sample_id": "RECENT-008",
+      "priority_score": 0.63,
+      "source_file": "results_multiagent_full_all_case_study.json",
+      "source_sha256": "b67aa07ecdb4bf303867d3439dd22ce954a4d1e41df628e86456a6445c8471d7"
+    }
+  ],
+  "expert_review_sources": {
+    "source_questionnaire": {
+      "file": "Clinician Review Questionnaire_14_results.xlsx",
+      "sha256": "0f48d59bde035c034035d26bdc15ca0af9bc29c5574a59a0af36f0319f6d0c22",
+      "submissions": 14,
+      "case_level_judgments": 224,
+      "included_in_release": false,
+      "exclusion_reason": "Contains direct identifiers, submission metadata and free text."
+    },
+    "case_selection": {
+      "file": "wjx_selected_cases.csv",
+      "sha256": "10191a6ac26b351a97810e9ce14f97b782a8d14274e523cb4b8d2ca96ad3314d",
+      "cases": 16
+    },
+    "summary_mapping": {
+      "file": "wjx_ab_mapping.csv",
+      "sha256": "8954e7952145c3728bae58513db750043f370dbcb5c133c1ccd7b8a7c65a4e0f",
+      "mapping": "Summary A = free text; Summary B = structured for all cases"
+    }
+  },
+  "source_data_files": [
+    "source_data/main_performance.csv",
+    "source_data/bootstrap_confidence_intervals.csv",
+    "source_data/ablation_performance.csv",
+    "source_data/paired_comparisons.csv"
+  ],
+  "outputs": [
+    {
+      "file": "case_studies/mavacamten_ohcm.json",
+      "sha256": "8126d95ddc81f00500d2c1cc6afea4ee65956148ec2292ea5a4138b4da1485f5",
+      "bytes": 7215
+    },
+    {
+      "file": "case_studies/palbociclib_melanoma.json",
+      "sha256": "f869daac0810291e42bd178f3da2efe63b89ed34af38494bb97552240d29b1a7",
+      "bytes": 7124
+    },
+    {
+      "file": "case_studies/pirtobrutinib_cll.json",
+      "sha256": "ea4c3f59ace623f99638f7b97d91c3ccf9cd623e67c882da420322c2039f9fd2",
+      "bytes": 7136
+    },
+    {
+      "file": "case_studies/README.md",
+      "sha256": "b0aa9de9d3b40578ff2f1f72370b47b624e80676f3c374c5660a72405a85dd65",
+      "bytes": 867
+    },
+    {
+      "file": "expert_review/aggregate_expert_review_results.csv",
+      "sha256": "9ff8953d9786311f90d7ae9c6bc395ae793be8962b6869cac42fb8d8b1e377a7",
+      "bytes": 1975
+    },
+    {
+      "file": "expert_review/aggregate_reviewer_characteristics.csv",
+      "sha256": "6e86a2d330290cd1d1f0d07e7532a71e8889885c73959bcdeab53740de066865",
+      "bytes": 1274
+    },
+    {
+      "file": "expert_review/case_manifest.csv",
+      "sha256": "4d7099af2bc1d6b76a3835457e5833fb57033f4ba6423f5fa18ce60ea6840f2e",
+      "bytes": 1679
+    },
+    {
+      "file": "expert_review/README.md",
+      "sha256": "a83b5cda639415535e65d40a0adf3a7b53f2f7cf4ad43e5753ff436007f94410",
+      "bytes": 2736
+    },
+    {
+      "file": "README.md",
+      "sha256": "bba2b656a582fefff0fc56db37333cb3d3a3c49e8b668f3332b8aa87d2daf331",
+      "bytes": 1748
+    },
+    {
+      "file": "records/ablations/without_admet__drug_disjoint.json",
+      "sha256": "afc19ee79604c39908a429f31f16fa2dbeca6545f41f61ee3c61703ce60fa569",
+      "bytes": 2401846
+    },
+    {
+      "file": "records/ablations/without_admet__submission_date_separated.json",
+      "sha256": "14f15794f24f9c253d51193d2d862bfe0f0d5730e460158f4780a73dc61f1af2",
+      "bytes": 2373013
+    },
+    {
+      "file": "records/ablations/without_candidate_level_integration__drug_disjoint.json",
+      "sha256": "144e9da4b9723f523d52f4e4ee7f222f7650a3929205c7a8d27fdbf3756ff05e",
+      "bytes": 2550798
+    },
+    {
+      "file": "records/ablations/without_candidate_level_integration__submission_date_separated.json",
+      "sha256": "1924c8be37ca797260a4706f3104f672a60d40ceacff7433683a55b631acd178",
+      "bytes": 2516088
+    },
+    {
+      "file": "records/ablations/without_diseaseinfo__drug_disjoint.json",
+      "sha256": "8a973568a20b5f82274eb631626079a8e75c8156002ed86bb2a70f21e871dac9",
+      "bytes": 2363862
+    },
+    {
+      "file": "records/ablations/without_diseaseinfo__submission_date_separated.json",
+      "sha256": "55905be4a901336aa692a930371a9884ba16072eca34c05ced70eab501517a8d",
+      "bytes": 2347267
+    },
+    {
+      "file": "records/ablations/without_druginfo__drug_disjoint.json",
+      "sha256": "d70b1d9a911c68d796e128084cb2155363d9e7992af5db91ee57093f9f74ccb0",
+      "bytes": 2675036
+    },
+    {
+      "file": "records/ablations/without_druginfo__submission_date_separated.json",
+      "sha256": "5267e7bb8dda0c77e91af6dc151132ba8f79bf505cad45def51f313d2dad6377",
+      "bytes": 2676788
+    },
+    {
+      "file": "records/ablations/without_dti__drug_disjoint.json",
+      "sha256": "d19ffd6c92b76dff2a483dcc870aa7c2b631ad3bbe16febdea92942928b7dd5f",
+      "bytes": 2338015
+    },
+    {
+      "file": "records/ablations/without_dti__submission_date_separated.json",
+      "sha256": "c69969d3fa9c2c6b62f8909bca341d3d3e0b00f5c605029cd8435aa2e0acf14e",
+      "bytes": 2348665
+    },
+    {
+      "file": "records/ablations/without_planner__drug_disjoint.json",
+      "sha256": "146e1c76db3eeb1674c919b787ca2ab7ff92b3edc705fa15cc5e1da65d21b348",
+      "bytes": 2801900
+    },
+    {
+      "file": "records/ablations/without_planner__submission_date_separated.json",
+      "sha256": "ba329af1fd7b60c07755d976a8e47052ab72c66906eade34754f81161ddebf74",
+      "bytes": 2784801
+    },
+    {
+      "file": "records/ablations/without_trialprior__drug_disjoint.json",
+      "sha256": "c883baf1701a6ee66f3c469d4286c0a6685ca255d00dd648db5ae7cff21804af",
+      "bytes": 2448733
+    },
+    {
+      "file": "records/ablations/without_trialprior__submission_date_separated.json",
+      "sha256": "cf21d4a1479aaa5ac75f18d0a06264b1704f8bf37b9f6e7a13c5d2ae38cc24be",
+      "bytes": 2428339
+    },
+    {
+      "file": "records/baselines/cot__drug_disjoint.json",
+      "sha256": "f87c38a04040540cd07a59528306b041ad9e6f726afdd73fedb58c0b535e8254",
+      "bytes": 341241
+    },
+    {
+      "file": "records/baselines/cot__submission_date_separated.json",
+      "sha256": "9e7fc73277cb47625a9314caed548b643886628a5968ddadafac51172ae2ac77",
+      "bytes": 338221
+    },
+    {
+      "file": "records/baselines/direct__drug_disjoint.json",
+      "sha256": "ea793e52e1341b184d130bd202f324b2b55843bbef795708f3b791bfd0591b33",
+      "bytes": 328288
+    },
+    {
+      "file": "records/baselines/direct__submission_date_separated.json",
+      "sha256": "8fcbff85f4fc1820d1730ca41bf869567c73e4c0dce37115893916e763e57963",
+      "bytes": 325292
+    },
+    {
+      "file": "records/baselines/rag_tools__drug_disjoint.json",
+      "sha256": "fca10d04a8762ec42e8971c243d9b1351ddf6b1ef327e3d2640438a4c5f3ba13",
+      "bytes": 1992768
+    },
+    {
+      "file": "records/baselines/rag_tools__submission_date_separated.json",
+      "sha256": "d9fa5b64d18a7da122bdb53f53dcdb95dacfabaaec19cd042343250a08b07f8c",
+      "bytes": 2002520
+    },
+    {
+      "file": "records/baselines/treatagent__drug_disjoint.json",
+      "sha256": "d121325c646a9bd9055e783bf684802d214a66f2ab2a86f56f28781ddaf72f75",
+      "bytes": 5334434
+    },
+    {
+      "file": "records/baselines/treatagent__submission_date_separated.json",
+      "sha256": "5c031121568c1e9a34cca57ee7fc70f0fa68be643afb5d646e728f0a422b9334",
+      "bytes": 5377620
+    },
+    {
+      "file": "records/index.csv",
+      "sha256": "bf3ce445dab1f690910dcc297d3562ea7ca028013d448598e42745f0ff3a4ccc",
+      "bytes": 5287
+    },
+    {
+      "file": "records/README.md",
+      "sha256": "2da2e1c3152e7e30330f16b2f53507c33544d829c1421acfd9c246bd84c32f76",
+      "bytes": 1703
+    },
+    {
+      "file": "source_data/ablation_performance.csv",
+      "sha256": "f9b69e0a43c0fbdeab1f46cf8131dee6925193fc6ff5e003003bcbf80627bfe9",
+      "bytes": 1954
+    },
+    {
+      "file": "source_data/bootstrap_confidence_intervals.csv",
+      "sha256": "de5ec8fbfe92ee530b2660f05b2273176ead8846588ac9682a07e32d017d5f4f",
+      "bytes": 4743
+    },
+    {
+      "file": "source_data/main_performance.csv",
+      "sha256": "125828876ed2b100d97e80507123a5610590b52dfa7a09bcbe7f3f5d536e77b3",
+      "bytes": 1249
+    },
+    {
+      "file": "source_data/paired_comparisons.csv",
+      "sha256": "4580ec916ccb61441d0f54f40def2cb88c3707afbcc00e815c563057ef5831c8",
+      "bytes": 805
+    },
+    {
+      "file": "source_data/README.md",
+      "sha256": "4933198b72c2c73826f232b4216a0cdcd0d9dbe8e4f19ccefeae5831408b6618",
+      "bytes": 798
+    }
+  ]
+}

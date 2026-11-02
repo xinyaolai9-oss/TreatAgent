@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "metrics": {},
+  "method": "multiagent",
+  "workflow": "TreatAgent",
+  "agent_version": "full",
+  "threshold": 0.2,
+  "split": "case_study",
+  "total_samples": 1,
+  "positive_samples": 1,
+  "negative_samples": 0,
+  "run_metadata": {
+    "description": "Paper case study: Mavacamten–symptomatic obstructive hypertrophic cardiomyopathy.",
+    "component_removed": null,
+    "model_identifier": "gpt-4",
+    "records_are_frozen": true
+  },
+  "provenance": {
+    "kind": "frozen_case_study_conversion",
+    "source_file": "results_multiagent_full_all_case_study.json",
+    "source_sha256": "b67aa07ecdb4bf303867d3439dd22ce954a4d1e41df628e86456a6445c8471d7",
+    "source_collection": "case_study"
+  },
+  "results": [
+    {
+      "index": 9,
+      "sample_id": "RECENT-009",
+      "smiles": "CC(C)n1c(=O)cc(N[C@@H](C)c2ccccc2)[nH]c1=O",
+      "disease": "symptomatic obstructive hypertrophic cardiomyopathy",
+      "drug_names": [
+        "mavacamten",
+        "Camzyos",
+        "MYK-461"
+      ],
+      "label": 1,
+      "method": "multiagent",
+      "workflow": "TreatAgent",
+      "agent_version": "full",
+      "prediction_score": 0.75,
+      "prediction_binary": 1,
+      "threshold": 0.2,
+      "score_semantics": "continuous_research_priority",
+      "source_score_field": "llm_judge_probability",
+      "correct": true,
+      "model_output": {
+        "treatment_score": 0.75,
+        "confidence": 0.85,
+        "uncertainty": "medium",
+        "grade_reason": "The evidence includes weak direct indication overlap, strong disease-relevant mechanistic grounding via MYH7, moderate clinical feasibility, and no identified safety conflict.",
+        "key_support": [
+          "direct_indication_1",
+          "target_overlap_1"
+        ],
+        "key_conflict": [
+          "trial_prior_1"
+        ],
+        "missing_evidence": [],
+        "reasoning_summary": "Mavacamten shows direct indication overlap and consistent MYH7 target support in both the drug and disease contexts for hypertrophic cardiomyopathy. Clinical feasibility is rated as moderate given the historical disease-level success rate, and no major safety conflicts are reported. These factors justify a prioritization score within the B-grade interval for further validation."
+      },
+      "evidence_summary": {
+        "queried_sources": [
+          "TrialPrior",
+          "DTI",
+          "DrugInfo",
+          "DiseaseInfo"
+        ],
+        "source_records": {
+          "TrialPrior": {
+            "status": "ok",
+            "evidence_count": 1,
+            "representative_claims": [
+              "Historical disease-level success rate informs translational feasibility but is not drug-specific treatment evidence."
+            ]
+          },
+          "DTI": {
+            "status": "ok",
+            "evidence_count": 4,
+            "representative_claims": [
+              "Drug and disease evidence converge on target MYH7, supporting disease-grounded mechanistic plausibility.",
+              "DeepPurpose predicts sequence-level binding plausibility for protein target MYH7.",
+              "DeepPurpose predicts sequence-level binding plausibility for protein target TTN."
+            ]
+          },
+          "DrugInfo": {
+            "status": "ok",
+            "evidence_count": 3,
+            "representative_claims": [
+              "DrugCentral records mavacamten as an approved or clinically annotated molecule.",
+              "DrugCentral reports a disease indication overlap between mavacamten and Obstructive hypertrophic cardiomyopathy (HCM).",
+              "DrugCentral annotates mavacamten with target or mechanism prior on MYH7."
+            ]
+          },
+          "DiseaseInfo": {
+            "status": "ok",
+            "evidence_count": 13,
+            "representative_claims": [
+              "DiseaseInfo associates cardiomyopathy with target TTN.",
+              "DiseaseInfo associates cardiomyopathy with target MYBPC3.",
+              "DiseaseInfo associates cardiomyopathy with target MYH7."
+            ]
+          }
+        },
+        "source_coverage": {
+          "TrialPrior": 1,
+          "DTI": 4,
+          "DrugInfo": 3,
+          "DiseaseInfo": 13
+        },
+        "supportive_evidence_count": 5,
+        "conflict_evidence_count": 1,
+        "mean_confidence": 0.7759,
+        "conflict_level": 0.0476,
+        "top_evidence": [
+          "DiseaseInfo records TAFAMIDIS as a clinically relevant therapy prior for cardiomyopathy.",
+          "DiseaseInfo records TAFAMIDIS MEGLUMINE as a clinically relevant therapy prior for cardiomyopathy.",
+          "DiseaseInfo records DEXRAZOXANE HYDROCHLORIDE as a clinically relevant therapy prior for cardiomyopathy.",
+          "DiseaseInfo links clinically used drug PREDNISONE to target NR3C1 in cardiomyopathy."
+        ],
+        "planner_trace": [
+          {
+            "round": 1,
+            "action": "TrialPrior",
+            "reason": "TrialPrior is the cheapest high-yield evidence source, so query it first for budgeted triage.",
+            "planner_question": "Estimate whether symptomatic obstructive hypertrophic cardiomyopathy has favorable disease-level translational feasibility and whether TrialPrior should support or weaken the treatment hypothesis."
+          },
+          {
+            "round": 2,
+            "action": "DTI",
+            "reason": "Mechanism evidence has the highest utility and directly addresses the critical missing evidence for mechanism validation.",
+            "planner_question": "Can you provide target-grounded mechanism plausibility evidence for the drug with SMILES 'CC(C)n1c(=O)cc(N[C@@H](C)c2ccccc2)[nH]c1=O' in the context of symptomatic obstructive hypertrophic cardiomyopathy?"
+          },
+          {
+            "round": 3,
+            "action": "DrugInfo",
+            "reason": "DrugInfo has the highest utility (0.93) and directly addresses the missing drug context which is critical for assessing repurposing potential.",
+            "planner_question": "Can you provide evidence on historical indications, target-binding data, or repurposing history for the queried drug (SMILES: CC(C)n1c(=O)cc(N[C@@H](C)c2ccccc2)[nH]c1=O) in the context of treating symptomatic obstructive hypertrophic cardiomyopathy?"
+          },
+          {
+            "round": 4,
+            "action": "DiseaseInfo",
+            "reason": "DiseaseInfo has the highest remaining utility due to unresolved disease context gaps and its ability to strengthen target/pathway evidence or resolve mechanism-related uncertainties.",
+            "planner_question": "What disease-specific targets, pathways, or therapy priors are relevant to symptomatic obstructive hypertrophic cardiomyopathy, and how do they align with the mechanism evidence observed for MYH7 and TTN?"
+          },
+          {
+            "round": 5,
+            "action": "STOP",
+            "reason": "STOP is valid because collected evidence is sufficient for judgment, unresolved conflict is low, and budget is exhausted.",
+            "planner_question": "No further expert question is needed; decide whether the current evidence is sufficient for STOP."
+          }
+        ]
+      }
+    }
+  ]
+}

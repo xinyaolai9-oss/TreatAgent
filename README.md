@@ -24,24 +24,7 @@ A planner selects evidence sources, source-specific evidence agents interpret to
 
 ---
 
-## Key Results & Case Studies
-
-TreatAgent was evaluated on **2,160 drug–disease pairs** using two held-out settings: drug-disjoint (DD) and submission-date-separated (SS). Each test set contains 432 pairs.
-
-| Split | Workflow       | Accuracy  | F1 (95% CI)             | Precision | Recall    | AUROC     | AUPRC     |
-| ----- | -------------- | --------- | ----------------------- | --------- | --------- | --------- | --------- |
-| DD    | Direct         | 0.442     | 0.024 (0.000–0.054)     | 0.500     | 0.012     | 0.498     | 0.557     |
-| DD    | CoT            | 0.486     | 0.484 (0.421–0.543)     | 0.550     | 0.432     | 0.493     | 0.555     |
-| DD    | RAG+Tools      | 0.597     | 0.659 (0.612–0.706)     | 0.625     | 0.697     | 0.612     | 0.639     |
-| DD    | **TreatAgent** | **0.669** | **0.732 (0.689–0.771)** | **0.668** | **0.809** | **0.693** | **0.723** |
-| SS    | Direct         | 0.454     | 0.025 (0.000–0.054)     | 0.600     | 0.013     | 0.501     | 0.549     |
-| SS    | CoT            | 0.519     | 0.480 (0.418–0.536)     | 0.589     | 0.405     | 0.531     | 0.565     |
-| SS    | RAG+Tools      | 0.634     | 0.659 (0.611–0.709)     | 0.674     | 0.646     | 0.642     | 0.652     |
-| SS    | **TreatAgent** | **0.637** | **0.694 (0.651–0.734)** | **0.645** | **0.751** | **0.645** | **0.663** |
-
-F1 confidence intervals were estimated using 1,000 percentile bootstrap resamples (seed 13). TreatAgent recovered 80.9% and 75.1% of positive-outcome pairs in DD and SS, respectively. Full metrics and source data are available in `results/source_data/`.
-
-### Representative cases
+## Representative cases
 
 ![TreatAgent case studies for Mavacamten, Pirtobrutinib, and Palbociclib](assets/figures/figure4_case_study.png)
 
